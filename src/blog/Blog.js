@@ -23,7 +23,7 @@ import image4 from '../Images/image4.png';
 
 
 const sections = [
-  { title: 'Extreme Climate Events', url: '#' },
+  { title: 'Extreme Climate Events', url: '/Extreme' },
   { title: 'Food Insecurity', url: '#' },
   { title: 'Water Insecurity', url: '#' },
   { title: 'Economic Insecurity', url: '#' },
