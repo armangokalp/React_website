@@ -7,6 +7,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+import Water from "./Water-Security/Water";
 
 const Routers = () => {
     return (
@@ -16,6 +17,7 @@ const Routers = () => {
                     <Route path="/" element={<Blog />} />
                     <Route path="/Extreme" element={<Extreme/>} />
                     <Route path="/Food" element={<Food/>} />
+                    <Route path="/Water" element={<Water/>} />
                 </Route>
             </Routes>
         </Router>

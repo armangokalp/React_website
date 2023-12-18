@@ -1,5 +1,4 @@
 import React from "react";
-import "./Food.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../blog/Header';
 import Container from '@mui/material/Container';
