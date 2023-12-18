@@ -26,88 +26,94 @@ const Extreme = () =>{
     return(
         <ThemeProvider theme={defaultTheme}>
         <CssBaseline />
-        <Container maxWidth="lg">
+        <div>
         <Header title="Climate Security and Risks" sections={sections} />
 
         <main>
             <div className="main-div">
-                <div className="header-div">
-                    <div className="h-div">
-                        <h1 className="header-text">
+                <div className="extreme-header-div">
+                    <div className="extreme-h-div">
+                        <h1 className="extreme-header-text">
                         Extreme Climate Events: Understanding the Risks
                         </h1>
                     </div>
                 </div>
-                <div className="divider"/>
-                <div className="general-div">
-                    <h1 className="explain-h1">
+                <div className="extreme-divider"/>
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
                     What Are Extreme Climate Events?
                     </h1>
-                    <p className="explain-p">
+                    <p className="extreme-explain-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <img className="explain-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png"/>
+                    <img className="extreme-explain-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png"/>
                 </div>
-
-                <div className="impacts-div">
-                    <h1 className="impacts-h1">
+                <div className="extreme-divider-thin"/>
+                <div className="extreme-impacts-div">
+                    <h1 className="extreme-impacts-h1">
                     Types of Extreme Climate Events
                     </h1>
-                    <p className="impacts-p">e
+                    <p className="extreme-impacts-p">e
                     Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <img className="impacts-img-1" src= {image5}/>
-                    <img className="impacts-img-2" src= {image6}/>
-                    <img className="impacts-img-3" src= {image7}/>
-
+                    <div className="extreme-photo-div">
+                    <img className="extreme-impacts-img-1" src= {image5}/>
+                    <img className="extreme-impacts-img-1" src= {image6}/>
+                    <img className="extreme-impacts-img-1" src= {image7}/>
+                    </div>
                 </div>
                 <br/>
-                <div className="divider"/>
+                <br/>
+                <br/>
+                <div className="extreme-divider"/>
 
-                <div className="general-div">
-                    <h1 className="explain-h1">
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
                     Impacts
                     </h1>
-                    <p className="explain-p-larger">
+                    <p className="extreme-explain-p-larger">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+                <div className="extreme-divider-thin"/>
 
-                <div className="impacts-div">
-                    <h1 className="impacts-h1">
+                <div className="extreme-impacts-div">
+                    <h1 className="extreme-impacts-h1">
                     Real-world examples
                     </h1>
-                    <p className="impacts-p">e
+                    <p className="extreme-impacts-p">e
                     Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
 
                 </div>
-                <div className="divider"/>
+                <div className="extreme-divider"/>
 
-                <div className="general-div">
-                    <h1 className="explain-h1">
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
                     Mitigation and Adaptation Strategies
                     </h1>
-                    <p className="explain-p-larger">
+                    <p className="extreme-explain-p-larger">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+                <div className="extreme-divider-thin"/>
 
-                <div className="impacts-div">
-                    <h1 className="impacts-h1">
+
+                <div className="extreme-impacts-div">
+                    <h1 className="extreme-impacts-h1">
                     Preparedness and Resilience
                     </h1>
-                    <p className="impacts-p">e
+                    <p className="extreme-impacts-p">e
                     Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
 
                 </div>
-                <div className="divider"/>
+                <div className="extreme-divider"/>
                 
 
             </div>
             </main>
-            </Container>
+            </div>
         <Footer
         title="Climate Security and Risks"
         description="Arman Gökalp - Ali Vehbi Güneysu"

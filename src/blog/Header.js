@@ -15,7 +15,7 @@ function Header(props) {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-      <img src={logo} alt="" style={{ marginRight: '10px', width: '75px', height: '75px' }} />
+      <img src={logo} alt="" style={{ marginRight: '10px', width: '100px', height: '100px' }} />
         <Typography
           component="h2"
           variant="h5"
