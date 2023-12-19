@@ -1,4 +1,3 @@
-/* General Page Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -8,8 +7,31 @@ body {
     padding: 0;
 }
 
-/* Section Styling */
-.armed-intro-section,
+.armed-intro-section {
+    background-image: url('../Images/conflict.jpg');
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 18%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-title:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .armed-causes-section,
 .armed-effects-section,
 .armed-stats-section,
@@ -46,6 +68,22 @@ img {
     /* Style for interactive elements like sliders, maps */
 }
 
+.section-title h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.section-image {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .armed-intro-section,
@@ -55,5 +93,8 @@ img {
     .armed-stories-section {
         margin: 10px;
         padding: 10px;
+    }
+    .section-image {
+        height: 200px; /* Smaller height for mobile */
     }
 }

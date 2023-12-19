@@ -18,8 +18,8 @@ const sections = [
     { title: 'Extreme Climate Events', url: '/Extreme' },
     { title: 'Food Insecurity', url: '/Food' },
     { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '#' },
-    { title: 'Climate Induced Migration', url: '/Climate' },
+    { title: 'Economic Insecurity', url: '/Economic' },
+    { title: 'Climate Induced Migration', url: '/Migration' },
     { title: 'Armed Conflict', url: '/Conflict' },
 ];
 
@@ -45,7 +45,7 @@ const Migration = () => {
     const [chartVisible, setChartVisible] = useState(false);
     const { ref, inView } = useInView({
         delay: 200,
-        threshold: 1
+        threshold: 0.9
     });
 
     useEffect(() => {
@@ -67,18 +67,19 @@ const Migration = () => {
                 </div>
                 <div className="migration-divider"/>
 
-                <div className="migration-text">
-                    <h2>Problem Definition</h2>
-                    <p>
+                <div className="migration-text0">
+                    <h3>Problem Definition</h3>
+                    <p className="migration-explain-p">
                     Climate-induced migration, often referred to as climate migration or environmental migration, is a complex phenomenon driven by the impacts of climate change. It involves the displacement of individuals and communities from their homes and regions due to environmental changes and natural disasters caused or exacerbated by climate-related factors. This form of migration can take various forms, from internal displacement within a country to cross-border migration.
                     </p>
-                    <p>
+                    <p className="migration-explain-p">
                     According to the Internal Displacement Monitoring Centre (IDMC), between 2008 and 2019, an estimated 22 million people were displaced annually by climate-related disasters.
 The impacts of climate-induced migration are not limited to a single region. It occurs globally, affecting both developed and developing countries.
 Small island nations and coastal regions are particularly vulnerable to sea-level rise and are at the forefront of climate-induced migration.
 Climate-induced migration is expected to increase in the coming decades as climate change continues to alter environments and create new challenges for communities.
                     </p>
                 </div>
+                <div>
                 {/*
                 <div className="migration-divider-thin"/>
                 <div className="migration-subheading">
@@ -125,16 +126,17 @@ Climate-induced migration is expected to increase in the coming decades as clima
                     </div>
                 </div>
                 */}
-                <div className="migration-divider-thin"/>
+                </div>
 
                 <div className="migration-content">
                     <div className="migration-text">
-                        <h2>Real Stories of Migration</h2>
-                        <p>While climate-induced migration is a global phenomenon, it's important to humanize the issue by sharing real stories of individuals and communities affected by it. These stories highlight the personal experiences, challenges, and resilience of climate migrants. Some real stories include:</p>
+                        <h3>Real Stories of Migration</h3>
+                        <p className="migration-explain-p">
+                            While climate-induced migration is a global phenomenon, it's important to humanize the issue by sharing real stories of individuals and communities affected by it. These stories highlight the personal experiences, challenges, and resilience of climate migrants. Some real stories include:
+                        </p>
                     </div>
                     <div className="migration-image"></div>
                 </div>
-                <div className="migration-divider-thin"/>
                 <div className="migration-real-stories">
                 <div className="migration-text-center">
                 <ul>
@@ -145,7 +147,7 @@ Climate-induced migration is expected to increase in the coming decades as clima
                 </ul>
                 </div>
                 </div>
-                <div className="migration-divider"/>
+                <div className="migration-divider-thin"/>
 
                 <div className="migration-text-chart">
                 <div className="migration-statistics">

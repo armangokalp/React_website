@@ -1,0 +1,25 @@
+.economic-header-div {
+    background-image: url('../Images/economic.jpeg');
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.economic-header-text {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 18%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.economic-header-text:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

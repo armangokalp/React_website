@@ -9,12 +9,18 @@
 }
 
 .migration-header-text {
-    font-size: 3rem;
-    color: white;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 1);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 10px;
+    margin-top: 18%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.migration-header-text:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .migration-content-section {
@@ -29,14 +35,28 @@
 }
 
 .migration-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 10%;
     line-height: 1.6;
     width: 45%;
 }
 
+.migration-explain-p {
+    font-size: 1.4rem;
+    margin-right: 5%;
+}
+
+.migration-text0 {
+    font-size: 1.6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    line-height: 1.6;
+}
+
 .migration-text-center {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 10%;
     margin-right: 10%;
     line-height: 1.6;
@@ -46,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -99,14 +120,12 @@
     border-radius: 5px;
   }
   
-  /* Styles for the "Effects" section */
   .migration-effects {
     padding: 20px;
     background-color: #f8f8f8;
     border-radius: 5px;
   }
   
-  /* Styles for the "Real Stories of Migration" list */
   .migration-real-stories {
     list-style: disc;
     margin-left: 20px;
@@ -123,7 +142,7 @@
 .migration-text-chart {
     width: 100%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     
 }
 

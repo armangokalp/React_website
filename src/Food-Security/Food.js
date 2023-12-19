@@ -1,14 +1,12 @@
 import React from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import "./Food.css";
 import Header from '../blog/Header';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
 import customTheme from '../customTheme'
 
-import image6 from '../Images/image6.jpg';
-import image7 from '../Images/image7.jpg';
-import image5 from '../Images/image5.jpg';
 
 const defaultTheme = createTheme();
 
@@ -16,7 +14,7 @@ const sections = [
     { title: 'Extreme Climate Events', url: '/Extreme' },
     { title: 'Food Insecurity', url: '/Food' },
     { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '#' },
+    { title: 'Economic Insecurity', url: '/Economic' },
     { title: 'Climate Induced Migration', url: '/Migration' },
     { title: 'Armed Conflict', url: '/Conflict' },
 ];
@@ -25,19 +23,18 @@ const Food = () => {
     return (
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
-            <Container maxWidth="lg">
+            <div>
                 <Header title="Climate Security and Risks" sections={sections} />
 
                 <main>
+                    <div className="food-header-div">
+                            <h1 className="food-header-text">
+                                Food Insecurity Amidst Climate Change
+                            </h1>
+                    </div>
+                    <div className="migration-divider"/>
                     <div className="main-div">
-                        <div className="header-div">
-                            <div className="h-div">
-                                <h1 className="header-text">
-                                    Food Insecurity Amidst Climate Change
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="divider" />
+                        
                         <div className="general-div">
                             <h1 className="explain-h1">
                                 The Impact on Agriculture
@@ -101,13 +98,13 @@ const Food = () => {
 
                     </div>
                 </main>
-            </Container>
+            </div>
             <Footer
                 title="Climate Security and Risks"
                 description="Arman Gökalp - Ali Vehbi Güneysu"
             />
         </ThemeProvider>
-    )
-}
+    );
+};
 
 export default Food;
