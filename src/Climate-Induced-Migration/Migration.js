@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Bar } from 'react-chartjs-2';
+import { useInView } from 'react-intersection-observer';
 import "./Migration.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../blog/Header';
@@ -21,7 +23,33 @@ const sections = [
     { title: 'Armed Conflict', url: '#' },
 ];
 
+
+const migrationData = {
+    labels: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+    datasets: [{
+      label: 'Number of Climate Migrants Worldwide (in millions)',
+      data: [22.1, 19.1, 19.2, 24.4, 18.6, 17.5, 25.3, 31.7, 23.7, 32.6, 0],
+      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      borderWidth: 1
+    }]
+  };
+
+
 const Migration = () => {
+
+    const [chartVisible, setChartVisible] = useState(false);
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setChartVisible(true);
+        }
+    }, [inView]);
+
     return (
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
@@ -115,13 +143,19 @@ Climate-induced migration is expected to increase in the coming decades as clima
                 </div>
                 <div className="migration-divider"/>
 
-
                 <div className="migration-text">
-                    <h2>Migration Statistics</h2>
-                    {/* Include charts or graphs here */}
+                <div className="migration-statistics">
+                    <div className="migration-text">
+                        <h2>Migration Statistics</h2>
+                    </div>
+                    <div ref={ref}>
+                    {chartVisible && (
+                        <Bar data={migrationData} /> 
+                    )}
+                    </div> 
+                </div>
                 </div>
                 <div className="migration-divider"/>
-
             </main>
 
             <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />

@@ -85,8 +85,7 @@ const sidebar = {
   ],
 };
 
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+{/*const defaultTheme = createTheme();*/}
 
 export default function Blog() {
   return (
@@ -102,7 +101,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="What is Climate Security" posts={posts} />
+            <Main title="More about Climate Security" /*posts={posts}*/ />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
