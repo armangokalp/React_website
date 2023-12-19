@@ -31,8 +31,12 @@ const migrationData = {
       data: [22.1, 19.1, 19.2, 24.4, 18.6, 17.5, 25.3, 31.7, 23.7, 32.6, 0],
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
       borderColor: 'rgba(54, 162, 235, 1)',
-      borderWidth: 1
-    }]
+      borderWidth: 2
+    }],
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
   };
 
 
@@ -121,7 +125,7 @@ Climate-induced migration is expected to increase in the coming decades as clima
                     </div>
                 </div>
                 */}
-                <div className="migration-divider"/>
+                <div className="migration-divider-thin"/>
 
                 <div className="migration-content">
                     <div className="migration-text">
@@ -143,19 +147,21 @@ Climate-induced migration is expected to increase in the coming decades as clima
                 </div>
                 <div className="migration-divider"/>
 
-                <div className="migration-text">
+                <div className="migration-text-chart">
                 <div className="migration-statistics">
-                    <div className="migration-text">
+
+                    <div className="chart-container" ref={ref}>
+                    <div className="migration-text-chart">
                         <h2>Migration Statistics</h2>
                     </div>
-                    <div ref={ref}>
-                    {chartVisible && (
-                        <Bar data={migrationData} /> 
-                    )}
-                    </div> 
+                    <div className="migration-divider-blank"/>
+                        {chartVisible && (
+                            <Bar data={migrationData} />
+                        )}
+                    </div>
                 </div>
-                </div>
-                <div className="migration-divider"/>
+            </div>
+            <div className="migration-divider"/>
             </main>
 
             <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
