@@ -20,7 +20,7 @@ const sections = [
     { title: 'Water Insecurity', url: '/Water' },
     { title: 'Economic Insecurity', url: '#' },
     { title: 'Climate Induced Migration', url: '/Climate' },
-    { title: 'Armed Conflict', url: '#' },
+    { title: 'Armed Conflict', url: '/Conflict' },
 ];
 
 
@@ -44,8 +44,8 @@ const Migration = () => {
 
     const [chartVisible, setChartVisible] = useState(false);
     const { ref, inView } = useInView({
-        triggerOnce: true,
-        threshold: 0.5
+        delay: 200,
+        threshold: 1
     });
 
     useEffect(() => {

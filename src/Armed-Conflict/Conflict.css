@@ -1,0 +1,59 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+.armed-intro-section,
+.armed-causes-section,
+.armed-effects-section,
+.armed-stats-section,
+.armed-stories-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Section Headers */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Text Content */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Image and Visual Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Interactive Elements Styling */
+.interactive-element {
+    /* Style for interactive elements like sliders, maps */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .armed-intro-section,
+    .armed-causes-section,
+    .armed-effects-section,
+    .armed-stats-section,
+    .armed-stories-section {
+        margin: 10px;
+        padding: 10px;
+    }
+}

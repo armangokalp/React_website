@@ -15,7 +15,7 @@ const sections = [
     { title: 'Water Insecurity', url: '/Water' },
     { title: 'Economic Insecurity', url: '#' },
     { title: 'Climate Induced Migration', url: '/Migration' },
-    { title: 'Armed Conflict', url: '#' },
+    { title: 'Armed Conflict', url: '/Conflict' },
   ];
 const Water = () => {
   const [scrollingDown, setScrollingDown] = useState(false);
