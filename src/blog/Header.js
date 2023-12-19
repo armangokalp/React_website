@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import logo from '../Images/logo.png'
-
+import logo from '../Images/logo.png';
 
 function Header(props) {
   const { sections, title } = props;
@@ -15,17 +15,21 @@ function Header(props) {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-      <img src={logo} alt="" style={{ marginRight: '10px', width: '100px', height: '100px' }} />
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          sx={{ flex: 1 }}
-        >
-          {title}
-        </Typography>
+        <RouterLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+          <img src={logo} alt="Logo" style={{ marginRight: '10px', width: '150px', height: '150px' }} />
+        </RouterLink>
+        <RouterLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit', flex: 1 }}>
+          <Typography
+            component="h2"
+            variant="h5"
+            color="inherit"
+            align="center"
+            noWrap
+            sx={{ flex: 1, textAlign: 'center' }}
+          >
+            {title}
+          </Typography>
+        </RouterLink>
         <IconButton>
           <SearchIcon />
         </IconButton>

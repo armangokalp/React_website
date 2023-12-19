@@ -2,18 +2,19 @@ import React, { useState, useEffect } from 'react';
 import './Water.css'; // You can create this file for your styles
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../blog/Header';
+import customTheme from '../customTheme'
+
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
 const defaultTheme = createTheme();
 
 
 const sections = [
-    { title: 'Extreme Climate Events', url: '/extreme' },
-    { title: 'Food Insecurity', url: '#' },
-    { title: 'Water Insecurity', url: '#' },
+    { title: 'Extreme Climate Events', url: '/Extreme' },
+    { title: 'Food Insecurity', url: '/Food' },
+    { title: 'Water Insecurity', url: '/Water' },
     { title: 'Economic Insecurity', url: '#' },
-    { title: 'Desertification', url: '#' },
-    { title: 'Climate Induced Migration', url: '#' },
+    { title: 'Climate Induced Migration', url: '/Migration' },
     { title: 'Armed Conflict', url: '#' },
   ];
 const Water = () => {
@@ -38,7 +39,7 @@ const Water = () => {
   }, []); // Empty dependency array ensures the effect runs only once during component mount
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={customTheme}>
         <CssBaseline />
         <div>
             <Header title="Climate Security and Risks" sections={sections} />

@@ -9,6 +9,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
+import customTheme from '../customTheme'
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
@@ -24,11 +25,10 @@ import image4 from '../Images/image4.png';
 
 const sections = [
   { title: 'Extreme Climate Events', url: '/Extreme' },
-  { title: 'Food Insecurity', url: '#' },
-  { title: 'Water Insecurity', url: '#' },
+  { title: 'Food Insecurity', url: '/Food' },
+  { title: 'Water Insecurity', url: '/Water' },
   { title: 'Economic Insecurity', url: '#' },
-  { title: 'Desertification', url: '#' },
-  { title: 'Climate Induced Migration', url: '#' },
+  { title: 'Climate Induced Migration', url: '/Migration' },
   { title: 'Armed Conflict', url: '#' },
 ];
 
@@ -90,7 +90,7 @@ const defaultTheme = createTheme();
 
 export default function Blog() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={customTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
         <Header title="Climate Security and Risks" sections={sections} />
