@@ -15,8 +15,7 @@ const Water = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the user is scrolling down
-      const isScrollingDown = window.scrollY > 800;
+      const isScrollingDown = window.scrollY > 1100;
 
       // Update the state accordingly
       setScrollingDown(isScrollingDown);
