@@ -1,121 +1,96 @@
-Reset some default styles
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-}
+  }
 
-/* Header Section */
-.header-div {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    margin: 0;
-    background-image: url("https://cdn.britannica.com/42/188142-050-4D4D9D19/wildfire-Stanislaus-National-Forest-California-2013.jpg");
-    background-position: center bottom;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 .food-header-div {
-    background-image: url('../Images/food.jpeg');
+    position: relative;
+    top: 0%;
+    left: 0%;
     width: 100%;
-    height: 700px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 600px;
+    margin: 0;
+    
+    background-image: url("https://data.unicef.org/wp-content/uploads/2022/07/SOFI-hero-image-1-scaled-e1657120636728.jpg");
+    background-position: right center;
 }
-
+.food-text-div {
+    background-color: rgba(255, 255, 255, 0.516);
+    border-radius: 3%;
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+    width: 40%;
+}
 .food-header-text {
-    font-size: 3.5rem;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 18%;
-    transition: background-color 0.3s ease-in-out;
-}
 
-.food-header-text:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.h-div {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 60%;
-}
-
-.header-text {
     font-size: 3rem;
+    text-align: center;
     color: black;
 }
 
-/* Divider */
-.divider {
-    height: 5px;
-    background-color: #333;
-    width: 100%;
-    margin: 20px 0;
+.food-general-div {
+    overflow: hidden;
+    position: relative;
+    border: solid 10px rgba(190,120,8);
+    margin: 100px 0;
+    height: 350px;
+    width: 80%;
+    left: 10%;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    background-color: white ;
+}
+.food-general-div.enlarged {
+    transform: scale(1.1); /* Enlarge the div by 10% on hover */
+  }
+.food-explain-p {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 10%;
+    width: 65%;
+    margin: 0%;
+    color: black;
+}
+.food-explain-p.left {
+    left: 5%;
+
+}
+.food-explain-p.right {
+    right: 5%;
+}
+.food-explain-h1{
+position: absolute;
+font-weight: bolder;
+top: 15%;
+left: 10%;
+font-size: 2.2rem;
+margin: 0%;
 }
 
-/* General Content Section */
-.general-div {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-}
-
-.explain-h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.explain-p {
-    font-size: 1.2rem;
-}
-
-.explain-p-larger {
-    font-size: 1.2rem;
-}
-
-.explain-img {
-    width: 100%;
-    max-width: 400px;
+.food-img {
+    top: 20%;
+    object-fit: contain;
+    position: absolute;
+    width: 200px;
     height: auto;
-    margin-top: 20px;
+    max-height: 450px;
+    margin: 0;
 }
-
-/* Impacts Section */
-.impacts-div {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
+.food-img.right{
+    right: 7%;
 }
-
-.impacts-h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.food-img.left{
+    left: 7%;
 }
-
-.impacts-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.impacts-img {
+.food-full-img {
+    background-image: url("https://nationalfoodinstitute.com.au/nfi/wp-content/uploads/2022/10/Screen-Shot-2022-10-17-at-4.19.15-pm.png");
+    background-position: center center; 
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin-top: 20px;
+    height: 100%;
+    margin: 0%;
+    background-size: 100% auto;
 }
+
+  
