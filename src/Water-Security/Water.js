@@ -40,7 +40,7 @@ const Water = () => {
             <main>
                 <div className="water-header-div">
                             <h1 className="water-header-text">
-                            Su Güvencesizliği
+                            Su Güvenliği
                             </h1>
                 </div>
                 <div className='extreme-divider'/>

@@ -4,10 +4,11 @@ import "./Food.css";
 import Header from '../blog/Header';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
+import customTheme from '../customTheme'
+
 import './Food.css'
 import Footer from '../blog/Footer';
 import image6 from '../Images/image6.jpg';
-import image7 from '../Images/image7.jpg';
 import image5 from '../Images/image5.jpg';
 import { sections } from '../sections';
 const defaultTheme = createTheme();
@@ -49,7 +50,6 @@ const Food = () => {
   
       window.addEventListener('scroll', handleScroll);
   
-      // Clean up the event listener when the component unmounts
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
@@ -72,8 +72,7 @@ const Food = () => {
                         <div className="extreme-divider" />
                         <div className={`food-general-div ${isEnlarged1 ? 'enlarged' : ''}`}>
                             <p className="food-explain-p left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Eget velit aliquet sagittis id consectetur purus ut faucibus. Sed libero enim sed faucibus turpis in. 
-                            </p>
+                            Gıda güvenliği, toplumların sağlık ve refahını korumak için son derece önemli bir konsepttir. Sağlıklı ve güvenli gıdaların tüketilmesi, bireylerin hastalıklardan korunmasına ve sağlıklı bir yaşam sürdürmesine yardımcı olur. Ancak, gıda güvenliği sadece bireyler için değil, aynı zamanda toplumların ve ulusların genel ekonomik ve sosyal refahını da etkiler. Gıda kaynaklı hastalıkların yayılmasını önlemek, gıda tedarik zincirinin her aşamasında titizlikle uygulanan standartlar ve denetimler gerektirir. Ayrıca, gıda güvenliği, tarım, gıda üretimi ve dağıtımı süreçlerinin sürdürülebilirliği ile de yakından ilişkilidir.                            </p>
                             <img className='food-img right' src='https://static.vecteezy.com/system/resources/previews/016/733/039/original/hand-drawn-fruit-basket-illustration-png.png'/>
                         </div>
 
@@ -83,8 +82,7 @@ const Food = () => {
 
                         <div className={`food-general-div ${isEnlarged3 ? 'enlarged' : ''}`}>
                             <p className="food-explain-p right">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Eget velit aliquet sagittis id consectetur purus ut faucibus. Sed libero enim sed faucibus turpis in. 
-                            </p>
+                            Gıda güvenliği, dünya genelinde gıda üretimi ve tüketimi artarken daha da önemli hale gelmektedir. İklim değişikliği, doğal kaynakların azalması ve nüfus artışı gibi faktörler, gıda sistemlerine yeni zorluklar getirmektedir. Bu nedenle, sürdürülebilir tarım uygulamaları ve gıda üretimi yöntemlerinin benimsenmesi, gelecekteki gıda güvencesi için kritik öneme sahiptir. Ayrıca, gıda güvenliği politikalarının oluşturulması ve uygulanması, toplumların sağlık ve refahını korumak için ulusal ve uluslararası düzeydeki çabaları gerektirir.                            </p>
                             <img className='food-img left' src='https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fast-Food-PNG-Clipart/Sandwich_PNG_Clipart_Vector_Picture.png?m=1434276763'/>
                         </div>
                     </div>

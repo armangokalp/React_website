@@ -8,20 +8,12 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
 import customTheme from '../customTheme'
+import { sections } from '../sections';
 
 import migrationImage from '../Images/migration.jpeg';
 import Image4 from '../Images/image4.png';
 
 const defaultTheme = createTheme();
-
-const sections = [
-    { title: 'Extreme Climate Events', url: '/Extreme' },
-    { title: 'Food Insecurity', url: '/Food' },
-    { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '/Economic' },
-    { title: 'Climate Induced Migration', url: '/Migration' },
-    { title: 'Armed Conflict', url: '/Conflict' },
-];
 
 
 const migrationData = {
@@ -45,7 +37,7 @@ const Migration = () => {
     const [chartVisible, setChartVisible] = useState(false);
     const { ref, inView } = useInView({
         delay: 200,
-        threshold: 0.9
+        threshold: 0.8
     });
 
     useEffect(() => {

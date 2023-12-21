@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
@@ -11,12 +11,15 @@ import logo from '../Images/logo.png';
 
 function Header(props) {
   const { sections, title } = props;
+  const currentLocation = useLocation();
 
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <RouterLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
-          <img src={logo} alt="Logo" style={{ marginRight: '10px', width: '150px', height: '150px' }} />
+          <span style={{ marginRight: '10px', '&:hover img': { opacity: 0.7 } }}>
+            <img src={logo} alt="Logo" style={{ width: '150px', height: '150px' }} />
+          </span>
         </RouterLink>
         <RouterLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit', flex: 1 }}>
           <Typography
@@ -25,7 +28,7 @@ function Header(props) {
             color="inherit"
             align="center"
             noWrap
-            sx={{ flex: 1, textAlign: 'center' }}
+            sx={{ flex: 1, textAlign: 'center', '&:hover': { color: 'primary.main' } }}
           >
             {title}
           </Typography>
@@ -48,8 +51,16 @@ function Header(props) {
             noWrap
             key={section.title}
             variant="body2"
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
+            component={RouterLink}
+            to={section.url}
+            sx={{
+              p: 1, 
+              flexShrink: 0, 
+              textDecoration: currentLocation.pathname === section.url ? 'underline' : 'none',
+              '&:hover': {
+                color: 'primary.main',
+              },
+            }}
           >
             {section.title}
           </Link>

@@ -9,25 +9,31 @@ body {
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin: 0;
     
     background-image: url("https://data.unicef.org/wp-content/uploads/2022/07/SOFI-hero-image-1-scaled-e1657120636728.jpg");
     background-position: right center;
 }
 .food-text-div {
-    background-color: rgba(255, 255, 255, 0.516);
+    background-color: rgba(0, 0, 0, 0.516);
+    transition: background-color 0.3s ease-in-out;
     border-radius: 3%;
     position: absolute;
     left: 30%;
     bottom: 20%;
     width: 40%;
 }
+
+.food-text-div:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .food-header-text {
 
     font-size: 3rem;
     text-align: center;
-    color: black;
+    color: rgba(255, 255, 255, 1);
 }
 
 .food-general-div {

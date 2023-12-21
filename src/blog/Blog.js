@@ -18,6 +18,7 @@ import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 import image0 from '../Images/image0.jpg';
 import image1 from '../Images/image1.jpg';
+import { sections } from '../sections';
 //import image2 from '../Images/image2.jpg';
 import image4 from '../Images/image4.png';
 
@@ -27,14 +28,6 @@ import ReactMarkdown from 'react-markdown';
 
 
 
-const sections = [
-  { title: 'Extreme Climate Events', url: '/Extreme' },
-  { title: 'Food Insecurity', url: '/Food' },
-  { title: 'Water Insecurity', url: '/Water' },
-  { title: 'Economic Insecurity', url: '/Economic' },
-  { title: 'Climate Induced Migration', url: '/Migration' },
-  { title: 'Armed Conflict', url: 'Conflict' },
-];
 
 const mainFeaturedPost = {
   title: 'Navigating The Dilemmas of Climate Security',

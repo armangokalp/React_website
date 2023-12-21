@@ -6,16 +6,7 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
 import customTheme from '../customTheme'
-
-
-const sections = [
-    { title: 'Extreme Climate Events', url: '/Extreme' },
-    { title: 'Food Insecurity', url: '/Food' },
-    { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '/Economic' },
-    { title: 'Climate Induced Migration', url: '/Migration' },
-    { title: 'Armed Conflict', url: '/Conflict' },
-];
+import { sections } from '../sections';
 
 
 const Economic = () => {

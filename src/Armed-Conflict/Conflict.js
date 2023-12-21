@@ -9,6 +9,7 @@ import customTheme from '../customTheme';
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import { sections } from '../sections';
 
 let DefaultIcon = L.icon({
     iconUrl: icon,
@@ -35,16 +36,6 @@ const conflictData = [
     { id: 11, lat: 9.082, lng: 8.6753, title: "Nigerian Conflicts", description: "Communal conflicts in Nigeria, often related to resources, religion, and ethnicity." },
     { id: 12, lat: 33.2232, lng: 43.6793, title: "Iraqi Conflict", description: "Ongoing conflict in Iraq, influenced by sectarian divisions and international interventions." },
     { id: 13, lat: 34.9526, lng: 72.3311, title: "Insurgency in Pakistan", description: "Insurgency in Khyber Pakhtunkhwa, Pakistan, involving various militant groups and government forces." }
-];
-
-
-const sections = [
-    { title: 'Extreme Climate Events', url: '/Extreme' },
-    { title: 'Food Insecurity', url: '/Food' },
-    { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '/Economic' },
-    { title: 'Climate Induced Migration', url: '/Migration' },
-    { title: 'Armed Conflict', url: '/Conflict' },
 ];
 
 const Conflict = () => {
