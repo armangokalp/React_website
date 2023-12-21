@@ -47,15 +47,14 @@ const Water = () => {
             <main>
                 <div className="water-header-div">
                             <h1 className="water-header-text">
-                            Su Güvenliği
+                            Su Güvencesizliği
                             </h1>
                 </div>
                 <div className='extreme-divider'/>
         
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    Su güvensizliği, milyonlarca insanın hayatına dokunan bir küresel sorun olarak karşımıza çıkıyor. Bu sorun, su kıtlığından temiz içme suyuna erişim eksikliğine kadar bir dizi sorunu içerir. Dünya'nın birçok yerinde, topluluklar günlük olarak güvenli ve güvenilir su kaynakları bulma mücadelesi vermektedir. Bu kriz, sadece bireylerin refahını etkilemekle kalmaz, aynı zamanda bölge genelinde tehdit oluşturarak sınırlı su kaynakları üzerindeki çatışmaları tetikler.                    </p>
                 </div>
                 
                 <div className='extreme-general-div'>
@@ -68,8 +67,7 @@ const Water = () => {
 
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    Su güvensizliğinin en ürkütücü yönlerinden biri, hijyen ve kamu sağlığı üzerindeki etkisidir. Temiz suya yetersiz erişimin olduğu bölgelerde, sıklıkla su kaynaklarının kirlenmesi sonucu su kaynaklı hastalıkların yayılması yaşanır. Kirli su kaynakları, kolera ve dizanteri gibi hastalıkların yayılmasına neden olur ve bu durum özellikle çocuklar ve yaşlılar gibi savunmasız nüfusu olumsuz etkiler.                    </p>
                 </div>
                 <div className='extreme-general-div'>
                  <img className='water-centered-img' src = "https://i.natgeofe.com/n/fcc3a9af-2d50-4bbf-8925-72e047a874ed/desertification-01_2x1.jpg"/>
@@ -77,8 +75,7 @@ const Water = () => {
 
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    Su güvensizliği, sadece yerel bir sorun değildir; aynı zamanda jeopolitik gerilimler ve çatışmalara yol açma potansiyeline sahiptir. Tatlı su kaynakları daha da azalırken, ülkeler kendilerini "su savaşları" içinde bulabilirler. Bu, hayatta kalma meselesi olmanın ötesinde, hem insanların acı çekmesi hem de uluslararası ilişkiler açısından uzun vadeli sonuçlara yol açabilir. Su güvensizliğiyle başa çıkmak, sadece hayatta kalmak değil, aynı zamanda küresel istikrar ve sürdürülebilirlik için temel bir adımdır.                    </p>
                 </div>
                 <br/>
                 <br/>

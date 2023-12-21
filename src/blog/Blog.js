@@ -21,6 +21,10 @@ import image1 from '../Images/image1.jpg';
 //import image2 from '../Images/image2.jpg';
 import image4 from '../Images/image4.png';
 
+import ReactMarkdown from 'react-markdown';
+
+
+
 
 
 const sections = [
@@ -101,7 +105,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="More about Climate Security" /*posts={posts}*/ />
+          <Main title="More about Climate Security" posts={posts.map(post => <ReactMarkdown>{post}</ReactMarkdown>)} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

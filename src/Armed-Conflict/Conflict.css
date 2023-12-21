@@ -36,24 +36,26 @@ body {
 .armed-effects-section,
 .armed-stats-section,
 .armed-stories-section {
-    padding: 20px;
+    padding: 50px;
     margin: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Section Headers */
-h1, h2 {
-    color: #333;
-    text-align: center;
+.conflict-explain-p-larger {
+    font-size: 1.4rem;
+
 }
 
-/* Text Content */
-p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+.armed-causes-section {
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 /* Image and Visual Styles */
 img {
@@ -63,10 +65,9 @@ img {
     margin: 0 auto;
 }
 
+
 /* Interactive Elements Styling */
-.interactive-element {
-    /* Style for interactive elements like sliders, maps */
-}
+/*.interactive-element {/* Style for interactive elements like sliders, maps }
 
 .section-title h1 {
     text-align: center;
@@ -76,12 +77,25 @@ img {
 }
 
 /* Image Styling */
-.section-image {
-    width: 100%;
-    height: 300px; /* Adjust as needed */
+.section-image,
+.section-image0 {
     background-size: cover;
     background-position: center;
+    width: 45%;
+    height: 400px;
+    border-radius: 5px;    
     margin-bottom: 20px;
+    margin-left: 27%;
+    margin-right: 33%;
+    background-image: url('../Images/conflict2.jpeg');
+}
+
+.section-image0 {
+    background-image: url('../Images/conflict0.jpeg');
+}
+
+.map-pin {
+    background-image: url("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 }
 
 /* Responsive Design */
