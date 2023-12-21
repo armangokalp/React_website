@@ -11,17 +11,9 @@ import extreme2 from '../Images/extreme2.jpeg';
 import extremeImage from '../Images/extreme.jpg';
 //import extreme2 from '../Images/extreme2.jpg';
 import image5 from '../Images/image5.jpg';
+import { sections } from "../sections";
 const defaultTheme = createTheme();
 
-
-const sections = [
-    { title: 'Extreme Climate Events', url: '/Extreme' },
-    { title: 'Food Insecurity', url: '/Food' },
-    { title: 'Water Insecurity', url: '/Water' },
-    { title: 'Economic Insecurity', url: '/Economic' },
-    { title: 'Climate Induced Migration', url: '/Migration' },
-    { title: 'Armed Conflict', url: '/Conflict' },
-  ];
 const Extreme = () =>{
 
     const [openImage, setOpenImage] = useState(null);
