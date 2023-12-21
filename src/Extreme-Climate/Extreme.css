@@ -139,8 +139,10 @@
 .extreme-impacts-img-1{
     display: inline-block;
     object-fit: cover;
+    object-position: center right;
+
     border-radius: 5%;
     margin: 50px 2% 0px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }

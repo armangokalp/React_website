@@ -9,18 +9,9 @@ import image6 from '../Images/image6.jpg';
 import image7 from '../Images/image7.jpg';
 //import image2 from '../Images/image2.jpg';
 import image5 from '../Images/image5.jpg';
+import { sections } from "../sections";
 const defaultTheme = createTheme();
 
-
-const sections = [
-    { title: 'Extreme Climate Events', url: '/Extreme' },
-    { title: 'Food Insecurity', url: '#' },
-    { title: 'Water Insecurity', url: '#' },
-    { title: 'Economic Insecurity', url: '#' },
-    { title: 'Desertification', url: '#' },
-    { title: 'Climate Induced Migration', url: '#' },
-    { title: 'Armed Conflict', url: '#' },
-  ];
 const Extreme = () =>{
     
     return(

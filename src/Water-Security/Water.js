@@ -4,18 +4,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../blog/Header';
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
+import { sections } from '../sections';
 const defaultTheme = createTheme();
 
 
-const sections = [
-    { title: 'Extreme Climate Events', url: '/extreme' },
-    { title: 'Food Insecurity', url: '#' },
-    { title: 'Water Insecurity', url: '#' },
-    { title: 'Economic Insecurity', url: '#' },
-    { title: 'Desertification', url: '#' },
-    { title: 'Climate Induced Migration', url: '#' },
-    { title: 'Armed Conflict', url: '#' },
-  ];
 const Water = () => {
   const [scrollingDown, setScrollingDown] = useState(false);
 
