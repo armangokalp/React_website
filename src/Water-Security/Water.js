@@ -11,14 +11,31 @@ const defaultTheme = createTheme();
 
 
 const Water = () => {
-  const [scrollingDown, setScrollingDown] = useState(false);
+
+  const [scrollingDown1, setScrollingDown1] = useState(false);
+  const [scrollingDown2, setScrollingDown2] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrollingDown = window.scrollY > 1100;
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-      // Update the state accordingly
-      setScrollingDown(isScrollingDown);
+      // Calculate scroll position as a percentage
+      const scrollPercentage = (scrollY / (documentHeight - windowHeight)) * 100;
+
+      if (scrollPercentage > 40 && scrollPercentage < 95) {
+        // Apply styles when the scroll position exceeds 25%
+        setScrollingDown1(true);
+      } 
+      else if (scrollPercentage > 95) {
+        // Apply styles when the scroll position exceeds 70%
+        setScrollingDown2(true);
+      } else {
+        // Reset styles when below the specified percentages
+        setScrollingDown1(false);
+        setScrollingDown2(false);
+      }
     };
 
     // Add event listener for the scroll event
@@ -28,7 +45,7 @@ const Water = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array ensures the effect runs only once during component mount
+  }, []); 
 
   return (
     <ThemeProvider theme={customTheme}>
@@ -51,9 +68,9 @@ const Water = () => {
                 
                 <div className='extreme-general-div'>
                     <div className='glass-continue'/>
-                    <div className={`app ${scrollingDown ? 'scrolling-down' : ''}`}>
+                    <div className={`glass ${scrollingDown1 ? 'scrolling-down' : ''}`}>
                     </div>
-                    <h1 className='glass-h1'>{scrollingDown ? 'Senin sayende artık dolu!' : 'Boş bir bardak'}</h1>
+                    <h1 className='glass-h1'>{scrollingDown1 ? 'Okumaya başlayarak suyun yarısını doldurdun!' : 'Boş bir bardak'}</h1>
                     <p className='glass-p'>Okumaya devam ederek su kaynaklarını koru!</p>    
                 </div>
 
@@ -70,8 +87,14 @@ const Water = () => {
                     Su güvensizliği, sadece yerel bir sorun değildir; aynı zamanda jeopolitik gerilimler ve çatışmalara yol açma potansiyeline sahiptir. Tatlı su kaynakları daha da azalırken, ülkeler kendilerini "su savaşları" içinde bulabilirler. Bu, hayatta kalma meselesi olmanın ötesinde, hem insanların acı çekmesi hem de uluslararası ilişkiler açısından uzun vadeli sonuçlara yol açabilir. Su güvensizliğiyle başa çıkmak, sadece hayatta kalmak değil, aynı zamanda küresel istikrar ve sürdürülebilirlik için temel bir adımdır.                    </p>
                 </div>
                 <br/>
-                <br/>
-                <br/>
+                <div className='extreme-general-div'>
+                    <div className={`glass-continue ${scrollingDown2 ? 'scrolling-down' : ''}`}/>
+                    <div className= "glass scrolling-down" >
+                    </div>
+                    <h1 className='glass-h1'>{scrollingDown2 ? 'Senin sayende artık tamamen dolu!' : 'Yarısı dolu bir bardak'}</h1>
+                    <p className='glass-p'>Okumaya devam ederek su kaynaklarını koru!</p>    
+                </div>
+
                 <div className='extreme-divider'/>
 
 
