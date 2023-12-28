@@ -90,9 +90,10 @@ export default function Blog() {
 
   return (
     <ThemeProvider theme={customTheme}>
+      <div>
+      <Header title="Climate Security and Risks" sections={sections} />
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Climate Security and Risks" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -111,6 +112,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
+      </div>
       <Footer
         title="Climate Security and Risks"
         description="Arman Gökalp - Ali Vehbi Güneysu"

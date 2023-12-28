@@ -39,9 +39,9 @@ body {
 .food-general-div {
     overflow: hidden;
     position: relative;
-    border: solid 10px rgba(190,120,8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 100px 0;
-    height: 350px;
+    height: 370px;
     width: 80%;
     left: 10%;
     border-radius: 50px;
