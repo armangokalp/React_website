@@ -12,7 +12,7 @@ function FeaturedPost(props, id) {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href={"/Article/" + 1}>
+      <CardActionArea component="a" href={"/Article/" + id}>
         <Card sx={{ display: 'flex' }}>
           <CardContent sx={{ flex: 1 }}>
             <Typography component="h3" variant="h5">

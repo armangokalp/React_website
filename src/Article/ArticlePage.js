@@ -53,6 +53,23 @@ const featuredPosts = [
     image: 'path_to_image2',
     imageLabel: 'Image 2',
   },
+  {
+    title: 'Featured Post 3',
+    date: 'Date',
+    description:
+      'Description 3',
+    image: 'path_to_image1',
+    imageLabel: 'Image 3',
+  },
+  {
+    title: 'Featured Post 4',
+    date: 'Date',
+    description:
+      'Description 4',
+    image: 'path_to_image2',
+    imageLabel: 'Image 4',
+  },
+  
 ];
 
 const ArticlePage = () => {
@@ -80,11 +97,9 @@ const ArticlePage = () => {
               <p>{article.content}</p>
             </div>
             </main>
-            <Grid container spacing={4}>
+          <Grid container spacing={2} sx={{ mt: 3 }}>
               {featuredPosts.map((post, id) => (
-                <Grid item xs={12} md={6} key={post.title}>
                   <FeaturedPost post={post} />
-                </Grid>
               ))}
             </Grid>          
           <Footer />
