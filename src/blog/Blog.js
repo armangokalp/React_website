@@ -13,9 +13,7 @@ import customTheme from '../customTheme'
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
+import {post1,post2,post3} from "./blog-posts";
 import image0 from '../Images/image0.jpg';
 import image1 from '../Images/image1.jpg';
 import { sections } from '../sections';
@@ -60,6 +58,7 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
+console.log(posts)
 
 const sidebar = {
   title: 'About',
@@ -102,7 +101,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-          <Main title="More about Climate Security" posts={posts.map(post => <ReactMarkdown>{post}</ReactMarkdown>)} />
+          <Main title="More about Climate Security" posts= {posts} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
