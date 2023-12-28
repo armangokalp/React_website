@@ -21,9 +21,9 @@ import image1 from '../Images/image1.jpg';
 import { sections } from '../sections';
 //import image2 from '../Images/image2.jpg';
 import image4 from '../Images/image4.png';
-
 import ReactMarkdown from 'react-markdown';
-
+import { useParams, Link } from 'react-router-dom';
+import { getArticleById } from '../Article/ArticlesData';
 
 
 
@@ -46,6 +46,7 @@ const featuredPosts = [
       'A provocative look at the ethical crossroads of safeguarding our planet while protecting individual freedoms.',
     image: image1,
     imageLabel: 'Image Text',
+    id: 1,
   },
   {
     title: 'Water Wars: Global Crisis Unveiled',
@@ -54,6 +55,7 @@ const featuredPosts = [
       'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
     image: image4,
     imageLabel: 'Image Text',
+    id: 2,
   },
 ];
 
@@ -64,16 +66,16 @@ const sidebar = {
   description:
     'This website delves into the complexities and dilemmas surrounding the climate security, a phenomenon that has transformed from a future concern to an immediate global challenge.',
   Articles: [
-    { title: 'Climate Security Challenges', url: '#' },
-    { title: 'Nation-States and Climate Change', url: '#' },
-    { title: 'Ecosystems in Peril: Climate Impact', url: '#' },
-    { title: 'Human Security and Climate Crisis', url: '#' },
-    { title: 'Water Wars: Scarce Resources', url: '#' },
-    { title: 'Food Security Amidst Climate Change', url: '#' },
-    { title: 'Migration Crisis: Climates Role', url: '#' },
-    { title: 'Economic Instability and Climate', url: '#' },
-    { title: 'Health Risks in Changing Climates', url: '#' },
-    { title: 'Ethical Climate Security Solutions', url: '#' },
+    { title: 'Climate Security Challenges', url: '/Article' },
+    { title: 'Nation-States and Climate Change', url: '/Article' },
+    { title: 'Ecosystems in Peril: Climate Impact', url: '/Article' },
+    { title: 'Human Security and Climate Crisis', url: '/Article' },
+    { title: 'Water Wars: Scarce Resources', url: '/Article' },
+    { title: 'Food Security Amidst Climate Change', url: '/Article' },
+    { title: 'Migration Crisis: Climates Role', url: '/Article' },
+    { title: 'Economic Instability and Climate', url: '/Article' },
+    { title: 'Health Risks in Changing Climates', url: '/Article' },
+    { title: 'Ethical Climate Security Solutions', url: '/Article' },
   ],
   social: [
     { name: 'GitHub', icon: GitHubIcon },
@@ -85,6 +87,7 @@ const sidebar = {
 {/*const defaultTheme = createTheme();*/}
 
 export default function Blog() {
+
   return (
     <ThemeProvider theme={customTheme}>
       <CssBaseline />
@@ -93,7 +96,7 @@ export default function Blog() {
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
-            {featuredPosts.map((post) => (
+            {featuredPosts.map((post, id) => (
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>

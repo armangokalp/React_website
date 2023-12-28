@@ -28,3 +28,8 @@
   
   /* Add more styles for images, videos, or other elements within the article */
   
+
+  .featured-post-link {
+    display: block; /* or 'inline-block', depending on your layout */
+    /* Other styles to correct alignment */
+  }

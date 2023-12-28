@@ -26,6 +26,7 @@ const Routers = () => {
                     <Route path="/Migration" element={<Migration/>} />
                     <Route path="/Conflict" element={<Conflict/>} />
                     <Route path="/Article" element={<Article/>} />
+                    <Route path="/Article/:id" element={<Article/>} />
                 </Route>
             </Routes>
         </Router>

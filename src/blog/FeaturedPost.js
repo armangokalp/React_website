@@ -7,12 +7,12 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
-function FeaturedPost(props) {
+function FeaturedPost(props, id) {
   const { post } = props;
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="/Article">
+      <CardActionArea component="a" href={"/Article/" + 1}>
         <Card sx={{ display: 'flex' }}>
           <CardContent sx={{ flex: 1 }}>
             <Typography component="h3" variant="h5">

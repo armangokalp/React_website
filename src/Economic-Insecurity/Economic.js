@@ -45,8 +45,8 @@ const Economic = () => {
         animations: {
             tension: {
               easing: 'linear',
-              from: 0,
-              to: 1,
+              from: 1,
+              to: 0,
               loop: false
             }
         },
