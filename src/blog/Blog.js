@@ -66,16 +66,16 @@ const sidebar = {
   description:
     'This website delves into the complexities and dilemmas surrounding the climate security, a phenomenon that has transformed from a future concern to an immediate global challenge.',
   Articles: [
-    { title: 'Climate Security Challenges', url: '/Article' },
-    { title: 'Nation-States and Climate Change', url: '/Article' },
-    { title: 'Ecosystems in Peril: Climate Impact', url: '/Article' },
-    { title: 'Human Security and Climate Crisis', url: '/Article' },
-    { title: 'Water Wars: Scarce Resources', url: '/Article' },
-    { title: 'Food Security Amidst Climate Change', url: '/Article' },
-    { title: 'Migration Crisis: Climates Role', url: '/Article' },
-    { title: 'Economic Instability and Climate', url: '/Article' },
-    { title: 'Health Risks in Changing Climates', url: '/Article' },
-    { title: 'Ethical Climate Security Solutions', url: '/Article' },
+    { title: 'Climate Security Challenges', url: '/Article/3' },
+    { title: 'Nation-States and Climate Change', url: '/Article/4' },
+    { title: 'Ecosystems in Peril: Climate Impact', url: '/Article/5' },
+    { title: 'Human Security and Climate Crisis', url: '/Article/6' },
+    { title: 'Water Wars: Scarce Resources', url: '/Article/7' },
+    { title: 'Food Security Amidst Climate Change', url: '/Article/8' },
+    { title: 'Migration Crisis: Climates Role', url: '/Article/9' },
+    { title: 'Economic Instability and Climate', url: '/Article/10' },
+    { title: 'Health Risks in Changing Climates', url: '/Article/11' },
+    { title: 'Ethical Climate Security Solutions', url: '/Article/12' },
   ],
   social: [
     { name: 'GitHub', icon: GitHubIcon },
@@ -93,7 +93,8 @@ export default function Blog() {
       <div>
       <Header title="Climate Security and Risks" sections={sections} />
       <CssBaseline />
-      <Container maxWidth="lg">
+      {/*<Container maxWidth="lg"> */}
+      <div className='main-padding'>
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -111,7 +112,8 @@ export default function Blog() {
             />
           </Grid>
         </main>
-      </Container>
+      </div>
+      {/*</Container> */}
       </div>
       <Footer
         title="Climate Security and Risks"

@@ -74,18 +74,22 @@ const featuredPosts = [
 
 const ArticlePage = () => {
 
-  const { articleId } = useParams();
-  const article = articles[1];
+  const { id } = useParams();
+  const articleId = String(id);
+  const article = articles.find(a => a.id === articleId);
 
   if (!article) {
     return <div>Article not found</div>;
   }
 
+
   return (
     <ThemeProvider theme={customTheme}>
-      <Container maxWidth="lg">
+      <Header title="Climate Security and Risks" sections={sections} />
+      <div className="article-padding">
+      <div className="back-color">
+
         <div className="article-page">
-          <Header title="Climate Security and Risks" sections={sections} />
           <main className="article-content">
             <h1 className="article-title">{article.title}</h1>
             <p className="article-author">By {article.author}</p>
@@ -102,9 +106,13 @@ const ArticlePage = () => {
                   <FeaturedPost post={post} />
               ))}
             </Grid>          
-          <Footer />
+            <Footer
+              title="Climate Security and Risks"
+              description="Arman Gökalp - Ali Vehbi Güneysu"
+            />
         </div>
-      </Container>
+        </div>
+      </div>
     </ThemeProvider>
   );
 };

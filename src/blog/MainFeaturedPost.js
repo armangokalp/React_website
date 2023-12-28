@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
-function MainFeaturedPost(props) {
+function MainFeaturedPost(props, id) {
   const { post } = props;
 
   return (
@@ -43,15 +43,19 @@ function MainFeaturedPost(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography component="h3" variant="h3" color="inherit" gutterBottom>
-              {post.title}
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              {post.description}
-            </Typography>
-            <Link variant="subtitle1" href="/Article">
-              {post.linkText}
+            <Grid height={400}>
+              <Typography component="h3" variant="h2" color="inherit" gutterBottom>
+                {post.title}
+              </Typography>
+              <Typography variant="h5" color="inherit" paragraph>
+                {post.description}
+              </Typography>
+            </Grid>
+            <div className='box'>
+            <Link variant="subtitle1" href={"/Article/" + 0} color="text.primary">
+                {post.linkText}
             </Link>
+            </div>
           </Box>
         </Grid>
       </Grid>
