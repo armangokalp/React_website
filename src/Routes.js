@@ -6,6 +6,7 @@ import Water from "./Water-Security/Water";
 import Economic from "./Economic-Insecurity/Economic";
 import Migration from "./Climate-Induced-Migration/Migration";
 import Conflict from "./Armed-Conflict/Conflict";
+import Article from "./Article/ArticlePage"
 import {
     BrowserRouter as Router,
     Routes,
@@ -24,6 +25,7 @@ const Routers = () => {
                     <Route path="/Economic" element={<Economic/>} />
                     <Route path="/Migration" element={<Migration/>} />
                     <Route path="/Conflict" element={<Conflict/>} />
+                    <Route path="/Article" element={<Article/>} />
                 </Route>
             </Routes>
         </Router>

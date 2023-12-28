@@ -1,0 +1,30 @@
+/* ArticlePage.css */
+.article-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .article-content {
+    flex: 1;
+    max-width: 800px;
+  }
+  
+  .article-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-author {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .article-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Add more styles for images, videos, or other elements within the article */
+  
