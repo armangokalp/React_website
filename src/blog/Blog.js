@@ -1,17 +1,17 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import Container from '@mui/material/Container';
+//import GitHubIcon from '@mui/icons-material/GitHub';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+import { /*createTheme*/ ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import customTheme from '../customTheme'
 import Main from './Main';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 import Footer from './Footer';
 import {post1,post2,post3} from "./blog-posts";
 import image0 from '../Images/image0.jpg';
@@ -19,9 +19,12 @@ import image1 from '../Images/image1.jpg';
 import { sections } from '../sections';
 //import image2 from '../Images/image2.jpg';
 import image4 from '../Images/image4.png';
-import ReactMarkdown from 'react-markdown';
-import { useParams, Link } from 'react-router-dom';
-import { getArticleById } from '../Article/ArticlesData';
+import './Blog.css'
+import { useNavigate } from 'react-router-dom';
+// import ReactMarkdown from 'react-markdown';
+// import { useParams, Link } from 'react-router-dom';
+// import { getArticleById } from '../Article/ArticlesData';
+
 
 
 
@@ -58,8 +61,8 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
-console.log(posts)
 
+{/*
 const sidebar = {
   title: 'About',
   description:
@@ -81,11 +84,18 @@ const sidebar = {
     { name: 'Twitter', icon: TwitterIcon },
     { name: 'Facebook', icon: FacebookIcon },
   ],
-};
+}; */}
 
 {/*const defaultTheme = createTheme();*/}
 
 export default function Blog() {
+
+  const navigate = useNavigate();
+
+  const handleRowClick = (path) => {
+      navigate(path);
+  };
+
 
   return (
     <ThemeProvider theme={customTheme}>
@@ -101,14 +111,70 @@ export default function Blog() {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <Grid container spacing={5} sx={{ mt: 3 }}>
-          <Main title="More about Climate Security" posts= {posts} />
-            <Sidebar
+          <Grid container spacing={5} sx={{ mt: 5 }}>
+          <table class="climate-table">
+            <thead>
+                <tr>
+                    <th>Climate Change Threats</th>
+                    <th>Human Beings</th>
+                    <th>State</th>
+                    <th>Planet/Ecosystem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onClick={() => handleRowClick('/Conflict')}>
+                    <td><a to="/Conflict" className="no-underline">Armed Conflict</a></td>
+                    <td>Internal/international displacement, death of civilians, sufferings from armed conflict</td>
+                    <td>Geopolitical tensions over resources, armed conflict</td>
+                    <td>Further Ecosystem disruptions due to armed conflict</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Migration')}>
+                    <td><a to="/Migration" className="no-underline">Climate Induced Migration</a></td>
+                    <td>Sufferings of people who migrate, cultural disruptions</td>
+                    <td>Managing displaced populations, cultural impacts/societal security, border security</td>
+                    <td>Ecosystem shifts and disruptions based on population moves</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Food')}>
+                    <td>Food Security</td>
+                    <td>Hunger, malnutrition</td>
+                    <td>Ensuring food supplies, addressing shortages, economic security</td>
+                    <td>Changes in crop patterns, impact on biodiversity</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Water')}>
+                    <td>Water Security</td>
+                    <td>Water scarcity, lack of access to clean water, challenges related to sanitation and sanitary issues</td>
+                    <td>Geopolitical tensions over freshwater resources - water wars</td>
+                    <td>Impact on aquatic ecosystems</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Extreme')}>
+                    <td>Extreme Climate Events</td>
+                    <td>Loss of lives, loss of goods</td>
+                    <td>Disaster management, infrastructure damage</td>
+                    <td>Ecosystem transformations, habitat loss</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Economic')}>
+                    <td>Threats to Economy</td>
+                    <td>Increased poverty, economic instability</td>
+                    <td>Economic planning, managing supply chain disruptions</td>
+                    <td></td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Water')}>
+                    <td>Desertification</td>
+                    <td>Displacement, loss of arable land, livelihoods</td>
+                    <td>Implementing land management, combating desertification</td>
+                    <td>Ecosystem changes, loss of productive land</td>
+                </tr>
+            </tbody>
+          </table>
+
+
+          {/*<Main posts= {posts}/>*/}
+            {/*<Sidebar
               title={sidebar.title}
               description={sidebar.description}
               Articles={sidebar.Articles}
               social={sidebar.social}
-            />
+            />*/}
           </Grid>
         </main>
       </div>

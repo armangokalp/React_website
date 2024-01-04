@@ -12,9 +12,13 @@ import extremeImage from '../Images/extreme.jpg';
 //import extreme2 from '../Images/extreme2.jpg';
 import image5 from '../Images/image5.jpg';
 import { sections } from "../sections";
+import { useScrollToTop } from '../blog/useScrollToTop';
+
 const defaultTheme = createTheme();
 
 const Extreme = () =>{
+
+    useScrollToTop();
 
     const [openImage, setOpenImage] = useState(null);
 

@@ -11,11 +11,15 @@ import Footer from '../blog/Footer';
 import image6 from '../Images/image6.jpg';
 import image5 from '../Images/image5.jpg';
 import { sections } from '../sections';
+import { useScrollToTop } from '../blog/useScrollToTop';
+
 const defaultTheme = createTheme();
 
 
 
 const Food = () => {
+
+    useScrollToTop();
 
     const [isEnlarged1, setIsEnlarged1] = useState(false);
     const [isEnlarged2, setIsEnlarged2] = useState(false);

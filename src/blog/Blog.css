@@ -1,0 +1,40 @@
+.climate-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.climate-table thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.climate-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.climate-table tbody tr {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.climate-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.climate-table tbody tr:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.no-underline {
+    text-decoration: none;
+    color: '#2F4F4F';
+}
+

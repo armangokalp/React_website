@@ -11,19 +11,22 @@
   }
   
   .article-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
   }
   
   .article-author {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666;
     margin-bottom: 20px;
   }
   
   .article-body {
-    font-size: 1.2rem;
+    font-size: 1.4em;
     line-height: 1.6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 150%;
   }
   
   /* Add more styles for images, videos, or other elements within the article */

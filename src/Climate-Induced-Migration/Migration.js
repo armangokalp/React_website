@@ -12,6 +12,7 @@ import { sections } from '../sections';
 
 import migrationImage from '../Images/migration.jpeg';
 import Image4 from '../Images/image4.png';
+import { useScrollToTop } from '../blog/useScrollToTop';
 
 const defaultTheme = createTheme();
 
@@ -33,6 +34,8 @@ const migrationData = {
 
 
 const Migration = () => {
+
+    useScrollToTop();
 
     const [chartVisible, setChartVisible] = useState(false);
     const { ref, inView } = useInView({

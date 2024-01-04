@@ -9,6 +9,7 @@ import customTheme from '../customTheme';
 import Container from '@mui/material/Container';
 import { sections } from '../sections';
 import { useParams } from 'react-router-dom';
+import image1 from '../Images/image1.jpg';
 
 const articles = [
   {
@@ -16,20 +17,23 @@ const articles = [
       title: "Navigating The Dilemmas of Climate Security",
       author: "Author for article 0",
       content: "Article content about navigating the dilemmas of climate security...",
+      content2: "",
       images: "../Images/image0.jpg",
   },
   {
       id: '1',
       title: "Climate Securitization Ethics: Balancing Risks and Rights",
       author: "Author for article 1",
-      content: "Article content about climate Securitization...",
-      images: "../Images/image1.jpg",
+      content: "In the face of the growing climate crisis, the securitization of climate-related issues has become a pressing concern. While the concept of climate security aims to address the risks associated with climate change, it also raises important ethical questions. Balancing the imperative to protect against climate threats with the preservation of individual rights and freedoms is a complex challenge.",
+      content2: "The ethical dimensions of climate securitization require a delicate equilibrium. On one hand, it's crucial to recognize the urgency of climate risks and the need for collective action to safeguard our planet. On the other hand, it's equally vital to ensure that the securitization process respects human rights, avoids undue militarization, and remains accountable. Striking this balance is essential for the development of effective and ethically sound climate security strategies.",
+      images: image1,
   },
   {
       id: '2',
       title: "Water Wars: Global Crisis Unveiled",
       author: "Author for article 2",
       content: "Article content about sustainable practices...",
+      content2: "",
       images: "../Images/image4.png",
   },
   // ... more articles
@@ -96,7 +100,7 @@ const ArticlePage = () => {
             <div className="article-body">
               <p>{article.content}</p>
             </div>
-            <img src={article.image} alt="description_here" />
+            <img src={article.images} alt="description_here"/>
             <div className="article-body">
               <p>{article.content}</p>
             </div>

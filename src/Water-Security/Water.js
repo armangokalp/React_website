@@ -7,10 +7,14 @@ import customTheme from '../customTheme'
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../blog/Footer';
 import { sections } from '../sections';
+import { useScrollToTop } from '../blog/useScrollToTop';
+
 const defaultTheme = createTheme();
 
 
 const Water = () => {
+
+  useScrollToTop();
 
   const [scrollingDown1, setScrollingDown1] = useState(false);
   const [scrollingDown2, setScrollingDown2] = useState(false);
