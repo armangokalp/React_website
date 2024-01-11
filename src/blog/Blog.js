@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -22,7 +22,8 @@ import image4 from '../Images/image4.png';
 import ReactMarkdown from 'react-markdown';
 import { useParams, Link } from 'react-router-dom';
 import { getArticleById } from '../Article/ArticlesData';
-
+import "./Gallery.css"
+import Gallery from './Gallery';
 
 
 
@@ -36,24 +37,30 @@ const mainFeaturedPost = {
   linkText: 'Continue reading…',
 };
 
-const featuredPosts = [
+const galleryData = [
   {
     title: 'Climate Securitization Ethics: Balancing Risks and Rights',
-    date: 'Nov 12',
-    description:
+    explanation:
       'A provocative look at the ethical crossroads of safeguarding our planet while protecting individual freedoms.',
-    image: image1,
-    imageLabel: 'Image Text',
-    id: 1,
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
   },
   {
     title: 'Water Wars: Global Crisis Unveiled',
-    date: 'Nov 11',
-    description:
+    explanation:
       'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    image: image4,
-    imageLabel: 'Image Text',
-    id: 2,
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+  },
+  {
+    title: 'Water Wars:',
+    explanation:
+      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+  },
+  {
+    title: 'Crisis Unveiled',
+    explanation:
+      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
   },
 ];
 
@@ -92,15 +99,16 @@ export default function Blog() {
       <div>
       <Header title="Climate Security and Risks" sections={sections} />
       <CssBaseline />
+
       {/*<Container maxWidth="lg"> */}
       <div className='main-padding'>
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={4}>
-            {featuredPosts.map((post, id) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
-          </Grid>
+          <div className='galleries-div'>
+              <Gallery galleryData={galleryData} seconds = {5}/>
+              <Gallery galleryData={galleryData} seconds = {3}/>
+          </div>
+          
           <Grid container spacing={5} sx={{ mt: 3 }}>
           <Main title="More about Climate Security" posts= {posts} />
             <Sidebar
