@@ -10,6 +10,9 @@ import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import { sections } from '../sections';
+import { useScrollToTop } from '../blog/useScrollToTop';
+
+
 
 let DefaultIcon = L.icon({
     iconUrl: icon,
@@ -39,6 +42,7 @@ const conflictData = [
 ];
 
 const Conflict = () => {
+    useScrollToTop();
     return (
         <ThemeProvider theme={customTheme}>
             <Header title="Climate Security and Risks" sections={sections} />
