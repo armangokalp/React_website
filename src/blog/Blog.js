@@ -122,12 +122,6 @@ export default function Blog() {
               <Gallery galleryData={galleryData} seconds = {5}/>
               <Gallery galleryData={galleryData} seconds = {3}/>
           </div>
-          
-          <Grid container spacing={4}>
-            {featuredPosts.map((post, id) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
-          </Grid>
           <Grid container spacing={5} sx={{ mt: 5 }}>
           <table class="climate-table">
             <thead>
