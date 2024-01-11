@@ -50,6 +50,8 @@ const Migration = () => {
     }, [inView]);
 
     return (
+        <div className="main-padding">
+
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
             <Header title="Climate Security and Risks" sections={sections} />
@@ -163,6 +165,7 @@ Climate-induced migration is expected to increase in the coming decades as clima
 
             <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
         </ThemeProvider>
+        </div>
     );
 };
 

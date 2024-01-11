@@ -44,6 +44,8 @@ const conflictData = [
 const Conflict = () => {
     useScrollToTop();
     return (
+        <div className="main-padding">
+
         <ThemeProvider theme={customTheme}>
             <Header title="Climate Security and Risks" sections={sections} />
             <main>
@@ -98,6 +100,7 @@ const Conflict = () => {
             </main>
             <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
         </ThemeProvider>
+        </div>
     );
 };
 

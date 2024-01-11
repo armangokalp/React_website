@@ -2,8 +2,7 @@
     border-collapse: collapse;
     margin-top: 20px;
     font-family: Arial, sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+
 }
 
 .climate-table thead th {
@@ -29,7 +28,7 @@
 
 .climate-table tbody tr:hover {
     background-color: #ddd;
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 

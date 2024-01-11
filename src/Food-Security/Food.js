@@ -61,7 +61,7 @@ const Food = () => {
     return (
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
-            <div>
+            <div className="main-padding">
                 <Header title="Climate Security and Risks" sections={sections} />
                 <main>
                     <div className="main-div">

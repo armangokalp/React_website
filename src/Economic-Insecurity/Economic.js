@@ -63,6 +63,8 @@ const Economic = () => {
 
       
     return (
+        <div className="main-padding">
+
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
             <Header title="Climate Security and Risks" sections={sections} />
@@ -151,6 +153,7 @@ const Economic = () => {
 
             <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
         </ThemeProvider>
+        </div>
     )
 }
 
