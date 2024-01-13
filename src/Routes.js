@@ -12,6 +12,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+import Header from "./Header/HeaderV2";
 
 const Routers = () => {
     return (
@@ -27,6 +28,7 @@ const Routers = () => {
                     <Route path="/Conflict" element={<Conflict/>} />
                     <Route path="/Article" element={<Article/>} />
                     <Route path="/Article/:id" element={<Article/>} />
+                    <Route path="/Dev" element={<Header/>} />
                 </Route>
             </Routes>
         </Router>
