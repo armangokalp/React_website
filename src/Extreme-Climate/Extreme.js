@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Extreme.css"
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from '../blog/Header';
+import Header from '../Header/Header';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
-import Footer from '../blog/Footer';
+import Footer from '../Footer/Footer';
 import customTheme from '../customTheme'
 
 import extreme2 from '../Images/extreme2.jpeg';
@@ -34,8 +34,7 @@ const Extreme = () =>{
         <ThemeProvider theme={customTheme}>
         <CssBaseline />
         <div className="main-padding">
-        <Header title="Climate Security and Risks" sections={sections} />
-
+        <Header activeSection= {0}/>
         <main>
             <div className="main-div">
                 <div className="extreme-header-div">
@@ -129,11 +128,10 @@ const Extreme = () =>{
                     Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
 
-                </div>
-                <div className="extreme-divider"/>
-                
-
+                </div>                
             </div>
+        <Footer/>
+
             </main>
             </div>
             {openImage && (
@@ -141,10 +139,6 @@ const Extreme = () =>{
                     <img className="modal-content" src={openImage} alt="Enlarged view" />
                 </div>
             )}
-        <Footer
-        title="Climate Security and Risks"
-        description="Arman Gökalp - Ali Vehbi Güneysu"
-        />
     </ThemeProvider>
     )
 }

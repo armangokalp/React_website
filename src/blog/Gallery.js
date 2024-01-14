@@ -31,14 +31,16 @@ const Gallery = ({ galleryData, seconds }) => {
           <div className="gallery-image">
             <img src={data.imageSrc} alt={data.title} />
           </div>
-          <button className="nav-button left" onClick={handlePrev}>
+
+        </div>
+        
+      ))}
+      <button className="nav-button left" onClick={handlePrev}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <button className="nav-button right" onClick={handleNext}>
             <i className="fas fa-chevron-right"></i>
           </button>
-        </div>
-      ))}
     </div>
   );
 };

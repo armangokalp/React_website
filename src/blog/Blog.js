@@ -1,10 +1,10 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import { /*createTheme*/ ThemeProvider } from '@mui/material/styles';
-import Header from './Header';
+import Header from '../Header/Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import customTheme from '../customTheme'
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 import {post1,post2,post3} from "./blog-posts";
 import image0 from '../Images/image0.jpg';
 import { sections } from '../sections';
@@ -70,7 +70,8 @@ export default function Blog() {
 
       {/*<Container maxWidth="lg"> */}
       <div className='main-padding'>
-            <Header title="Climate Security and Risks" sections={sections} />
+            {/* <Header title="Climate Security and Risks" sections={sections} /> */}
+            <Header/>
       <CssBaseline />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
@@ -135,10 +136,7 @@ export default function Blog() {
         </main>
       </div>
       </div>
-      <Footer
-        title="Climate Security and Risks"
-        description="Arman Gökalp - Ali Vehbi Güneysu"
-      />
+      <Footer/>
     </ThemeProvider>
   );
 }

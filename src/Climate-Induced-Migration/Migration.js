@@ -3,10 +3,10 @@ import { Bar } from 'react-chartjs-2';
 import { useInView } from 'react-intersection-observer';
 import "./Migration.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from '../blog/Header';
+import Header from '../Header/Header';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
-import Footer from '../blog/Footer';
+import Footer from "../Footer/Footer";
 import customTheme from '../customTheme'
 import { sections } from '../sections';
 
@@ -54,7 +54,8 @@ const Migration = () => {
 
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
-            <Header title="Climate Security and Risks" sections={sections} />
+            <Header activeSection={4}/>
+            
 
             <main>
                 <div className="migration-header-div">
@@ -160,10 +161,8 @@ Climate-induced migration is expected to increase in the coming decades as clima
                     </div>
                 </div>
             </div>
-            <div className="migration-divider"/>
             </main>
-
-            <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
+            <Footer/>
         </ThemeProvider>
         </div>
     );
