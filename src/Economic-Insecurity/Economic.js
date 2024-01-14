@@ -1,9 +1,9 @@
 import React from "react";
 import "./Economic.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from '../blog/Header';
+import Header from '../Header/Header';
 import CssBaseline from '@mui/material/CssBaseline';
-import Footer from '../blog/Footer';
+import Footer from '../Footer/Footer';
 import customTheme from '../customTheme';
 import { sections } from '../sections';
 import energyImage from '../Images/economic1.jpeg';
@@ -67,7 +67,8 @@ const Economic = () => {
 
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
-            <Header title="Climate Security and Risks" sections={sections} />
+            <Header activeSection={3}/>
+            
 
             <main>
                 <div className="economic-header-div">
@@ -151,7 +152,7 @@ const Economic = () => {
                 </div>
             </main>
 
-            <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
+            <Footer/>
         </ThemeProvider>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from "react";
-import Header from '../blog/Header';
-import Footer from '../blog/Footer';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import "./Conflict.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -47,7 +47,8 @@ const Conflict = () => {
         <div className="main-padding">
 
         <ThemeProvider theme={customTheme}>
-            <Header title="Climate Security and Risks" sections={sections} />
+        <Header activeSection={5}/>
+            
             <main>
 
                 <div className="armed-intro-section">
@@ -98,7 +99,7 @@ const Conflict = () => {
                 </div>
 
             </main>
-            <Footer title="Climate Security and Risks" description="Arman Gökalp - Ali Vehbi Güneysu" />
+            <Footer/>
         </ThemeProvider>
         </div>
     );

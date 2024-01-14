@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./Food.css";
-import Header from '../blog/Header';
+import Header from '../Header/Header';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import customTheme from '../customTheme'
 
 import './Food.css'
-import Footer from '../blog/Footer';
+import Footer from '../Footer/Footer';
 import image6 from '../Images/image6.jpg';
 import image5 from '../Images/image5.jpg';
 import { sections } from '../sections';
@@ -62,7 +62,8 @@ const Food = () => {
         <ThemeProvider theme={customTheme}>
             <CssBaseline />
             <div className="main-padding">
-                <Header title="Climate Security and Risks" sections={sections} />
+            <Header activeSection= {1}/>
+                
                 <main>
                     <div className="main-div">
                         <div className="food-header-div">
@@ -91,11 +92,9 @@ const Food = () => {
                         </div>
                     </div>
                 </main>
+            <Footer/>
+
             </div>
-            <Footer
-                title="Climate Security and Risks"
-                description="Arman Gökalp - Ali Vehbi Güneysu"
-            />
         </ThemeProvider>
     );
 };
