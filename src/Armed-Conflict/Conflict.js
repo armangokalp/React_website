@@ -53,29 +53,27 @@ const Conflict = () => {
 
                 <div className="armed-intro-section">
                     <h1 className="section-title">
-                        Armed Conflict Over Depleting Resources
+                        Azalan Kaynaklar Sonucu Silahlı Çatışma
                     </h1>
                 </div>
                 <div className="migration-divider"/>
 
                 <div className="armed-causes-section">
-                    <h3>Causes of Armed Conflicts</h3>
+                    <h3>İklim Değişikliğinin Silahlı Çatışmaya Etkisi</h3>
                     <p className="conflict-explain-p-larger">
-                        Armed conflicts exacerbated by climate change are often rooted in complex factors that escalate tensions and lead to violence. One primary cause is resource scarcity, where competition for limited resources such as water, arable land, and energy sources intensifies. Additionally, extreme weather events and environmental degradation can disrupt livelihoods and displace communities, creating conditions conducive to conflict. Moreover, climate-induced migration, triggered by rising sea levels or deteriorating living conditions, can strain resources in host communities, sparking tensions. These underlying causes underscore the critical need for proactive strategies to address climate-related security challenges.                    
-                    </p>
+                    İklim değişikliği doğrudan çatışmaya neden olmasa da, toplumlardaki mevcut kırılganlıkları ve stres faktörlerini artırarak bir tehdit çarpanı görevi görmektedir. Bir başka ifadeyle, iklim değişikliği genellikle çatışmanın temelini oluşturan eşitsizlikleri ve kırılganlıkları artırmakta ve birleştirmektedir. Deniz seviyesinin yükselmesi, arazi bozulması, kıyı erozyonu, aşırı sıcaklık gibi iklim değişikliğinin etkileri, tüm alanları yaşanmaz hale getirmekte, kırsal geçim kaynaklarının yaşanabilirliğini tehdit etmekte ve kaynaklar üzerindeki rekabeti teşvik etmektedir. Örneğin, yağış düzenindeki değişiklikler, kuraklık ve kıtlık bir toplumda halihazırda var olan mevcut gerilimleri artırmaktadır. Kıt kaynaklar için rekabet, özellikle bu kaynaklara erişimin hayatta kalmak için çok önemli olduğu bölgelerde gerilimleri artırmakta ve çatışmalara katkıda bulunmaktadır.                     </p>
                 </div>
                 <div className="section-image0"> </div>
 
                 <div className="armed-causes-section">
-                    <h3>Effects on Populations and Environment</h3>
+                    <h3>İklim Değişikliği ve Kaynak Çatışmalarının Yıkıcı Etkileri</h3>
                     <p className="conflict-explain-p-larger">
-                        Armed conflicts driven by the consequences of climate change have devastating effects on both populations and the environment. Humanitarian crises often emerge as communities are displaced from their homes due to resource scarcity, extreme weather events, and deteriorating living conditions. This displacement results in a strain on resources in host communities, exacerbating tensions. Moreover, the environmental impact of armed conflicts is profound, with widespread destruction of ecosystems, deforestation, and pollution. These conflicts disrupt delicate ecological balances and can have long-lasting consequences on the environment, compounding the challenges posed by climate change.                    
-                    </p>
+                    Aşırı hava olayları, seller ve sıcak hava dalgaları gibi iklimle ilgili olaylar tarımı etkileyerek ürün kıtlığına, gıda fiyatlarında artışa ve geçim kaynaklarının kaybına yol açmaktadır. Bu durum ekonomik istikrarsızlığa neden olmakta ve topluluklar kaynaklar için rekabet etmekte, ve böylece çatışma riskini artmaktadır. Dolayısıyla, iklimle ilgili stresler mevcut yönetişim sorunlarını daha da kötüleştirerek hükümetlerin temel hizmetleri sağlamasını, krizlere müdahale etmesini ve sosyal düzeni korumasını zorlaştırmaktadır. Düşük gelirli ülkeler, kırılgan ve istikrarsız siyasi ortamlarda üstesinden gelinmesi özellikle zor olan ekonomik şoklar, zorunlu göç ve siyasi kurumların bozulması riskiyle daha fazla karşı karşıyadır.  İklim değişikliği ve çatışma arasındaki ilişki karmaşık ve bağlama özgüdür, ancak iklim değişikliğinin gıda güvensizliğini, su kıtlığını ve kaynak rekabetini artırırken geçim kaynaklarını bozan ve göçü teşvik eden bir tehdit çarpanı olduğu bir gerçektir.                     </p>
                 </div>
                 <div className="section-image"> </div>
 
                 <div className="armed-causes-section">
-                    <h3>Global Map of Ongoing Conflicts</h3>
+                    <h3>Devam Eden Çatışmaların Küresel Haritası</h3>
                     <p className="conflict-explain-p-larger">
                         The map below illustrates ongoing conflicts around the world exacerbated by climate change.
                     </p>

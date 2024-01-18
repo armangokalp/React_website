@@ -60,7 +60,7 @@ const Migration = () => {
             <main>
                 <div className="migration-header-div">
                         <h1 className="migration-header-text">
-                            Climate Induced Migration
+                            İklim Değişikliği Kaynaklı Göç
                         </h1>
                 </div>
                 <div className="migration-divider"/>
@@ -68,62 +68,12 @@ const Migration = () => {
                 <div className="migration-text0">
                     <h3>Problem Definition</h3>
                     <p className="migration-explain-p">
-                    Climate-induced migration, often referred to as climate migration or environmental migration, is a complex phenomenon driven by the impacts of climate change. It involves the displacement of individuals and communities from their homes and regions due to environmental changes and natural disasters caused or exacerbated by climate-related factors. This form of migration can take various forms, from internal displacement within a country to cross-border migration.
-                    </p>
+                    İklim değişikliğinin etkileri hızla artarken, bunun sonuçları insan göçünün kalıplarını ve dinamiklerini yeniden şekillendirmektedir. Aşırı sıcaklıklar tarımsal geçim kaynaklarını tehdit etmekte, deniz suyu seviyesinin yükselmesi yaşam alanlarını yok etmekte, kuraklık suya ve gıdaya erişilebilirliği zorlaştırmaktadır. İnsanların yaşam alanlarının ve temel geçim kaynaklarının doğrudan etkilenmesi, toplumları farklı bölgelerde yeni yaşam alanı arayışlarına yönlendirmektedir. Bunların bazıları ülke içerisinde yer değiştirmeden ibaretken, küçük ada devletleri gibi ülkelerinin sular altında kalması tehlikesiyle karşı karşıya olan toplumlar ise, farklı ülkelere göç etmek zorunda kalmaktadır. Dolayısıyla, iklim değişikliği dünya genelinde mevcut eşitsizlikleri ve güvensizlikleri artırdıkça, temel meselelerden birisi ise giderek öngörülemez hale gelen insan hareketliliğidir.                     </p>
                     <p className="migration-explain-p">
-                    According to the Internal Displacement Monitoring Centre (IDMC), between 2008 and 2019, an estimated 22 million people were displaced annually by climate-related disasters.
-The impacts of climate-induced migration are not limited to a single region. It occurs globally, affecting both developed and developing countries.
-Small island nations and coastal regions are particularly vulnerable to sea-level rise and are at the forefront of climate-induced migration.
-Climate-induced migration is expected to increase in the coming decades as climate change continues to alter environments and create new challenges for communities.
+                    Çevresel ve iklimsel faktörler, genellikle ekonomik, sosyal, siyasi ve demografik unsurlarla birlikte hareket eden hem itici hem de çekici faktörlerdir. Bu bağlamda, iklim değişikliğinin olumsuz etkileri nedeniyle evini veya bölgesini terk etmek zorunda kalan kişilere iklim mültecisi denilmektedir. Halihazırda, çevre ve iklim göçmenlerinin uluslararası kabul görmüş yasal bir tanımı ve korunmalarını düzenleyen tek bir özel yasal araç bulunmamaktadır. İklim değişikliği kaynaklı göç, insan güvenliğini doğrudan etkileyen acil ve temel bir sorundur. Bu nedenle iklim mültecileri, çatışma ve ekonomik istikrarsızlıktan sağlık riskleri ve sosyal kırılganlığa kadar bir dizi tehditle karşı karşıyadır. 
                     </p>
                 </div>
                 <div>
-                {/*
-                <div className="migration-divider-thin"/>
-                <div className="migration-subheading">
-                    <h2>The Causes and Effects</h2>
-                </div>
-                <div className="migration-causes-effects">
-                <div className="migration-causes">
-                    <h3>Causes</h3>
-                    <ul>
-                        <li>
-                        <strong>Environmental Degradation:</strong> Rising
-                        temperatures, sea-level rise, and extreme weather events degrade
-                        the environment, making areas uninhabitable.
-                        </li>
-                        <li>
-                        <strong>Resource Scarcity:</strong> Droughts and desertification
-                        lead to water and food scarcity, forcing communities to seek
-                        better living conditions elsewhere.
-                        </li>
-                        <li>
-                        <strong>Displacement by Natural Disasters:</strong> Cyclones,
-                        floods, and wildfires displace populations, often permanently.
-                        </li>
-                    </ul>
-                    </div>
-                    <div className="migration-effects">
-                    <h3>Effects</h3>
-                    <ul>
-                        <li>
-                        <strong>Disruption of Livelihoods:</strong> Climate-induced
-                        migration disrupts traditional livelihoods, leading to economic
-                        challenges.
-                        </li>
-                        <li>
-                        <strong>Increased Competition:</strong> Migration often leads
-                        to competition for resources and jobs in receiving areas.
-                        </li>
-                        <li>
-                        <strong>Loss of Cultural Heritage:</strong> Indigenous
-                        communities may lose their cultural heritage as they are forced
-                        to relocate.
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                */}
                 </div>
 
                 <div className="migration-content">
@@ -152,7 +102,7 @@ Climate-induced migration is expected to increase in the coming decades as clima
 
                     <div className="chart-container" ref={ref}>
                     <div className="migration-text-chart">
-                        <h2>Migration Statistics</h2>
+                        <h2>Dünya Geneli Göç İstatistikleri</h2>
                     </div>
                     <div className="migration-divider-blank"/>
                         {chartVisible && (

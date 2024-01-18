@@ -73,7 +73,7 @@ const Economic = () => {
             <main>
                 <div className="economic-header-div">
                     <h1 className="economic-header-text">
-                        Economic Insecurity and Energy Challenges
+                        Ekonomik Güvenlik ve Enerji Sorunları
                     </h1>
                 </div>
                 <div className="migration-divider"/>
@@ -81,44 +81,28 @@ const Economic = () => {
                 <div className="economic-section">
                     <div className="content-flex">
                         <div className="text-content">
-                            <h3>Introduction to Economic Insecurity</h3>
+                            <h3>Ekonomik Güvenliğe Giriş</h3>
                             <p className="conflict-explain-p-larger">
-                            Economic insecurity is a growing concern in today's world, and it is closely intertwined with the challenges posed by climate change. As the planet experiences shifts in climate patterns, extreme weather events, and environmental degradation, the global economy faces a range of uncertainties. This section provides an in-depth introduction to economic insecurity and explores how climate change is influencing global economics.
-                            </p>
-                            <p className="conflict-explain-p-larger">
-                            Climate change affects economic stability in various ways, from disrupting supply chains to increasing the frequency and severity of natural disasters. These changes can lead to financial losses, job insecurity, and reduced economic growth. Understanding the link between climate and economic insecurity is crucial for devising effective strategies to address these challenges.
+                            Küresel iklim değişikliği, bireyler, devletler ve genel olarak küresel ekonomi için yoğun ve derin ekonomik zorluklar ortaya çıkarır. Aşırı hava olaylarına bağlı olarak ekonomik kayıplar artar. İklim değişikliği dolaylı olarak üretim ve imalat sanayiler için de risklere neden olur. Tüketim unsurlarının çoğu fiziksel çevre tarafından şekillendiği için malların ve hizmetlerin kalitesi ve taleplerinde değişiklikler meydana gelmektedir. İnşaat sanayisi gibi endüstriler, oteller, restoranlar ve yiyecek fabrikaları gibi bozulabilir mal ve hizmetler ve turistik bölgeler gerçekleşen değişikliklerden etkilenir. Sigorta sektörü de riskleri paylaşırken, sel ve kuraklık gibi afetler nedeniyle finansal kayıpların telafisine ilişkin hasar ödemeleri ve dolayısıyla talep edilen sigorta primleri de artmaktadır. Bireyler ve topluluklar genel olarak altyapıların zarar görmesi ve ekonomik istikrarsızlık gibi risklerle karşı karşıyadır. Gezegenin tamamı için ise yaşanan ekonomik zorlukların ekosistemlerdeki bozulmalara katkıda bulunması muhtemeldir. Devletler düzeyinde tedarik zinciri ve altyapıdaki aksaklıkların ele alınması ve istikrarın sağlanması için ekonomik planlamaların yapılması gereklidir. 
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div className="economic-section">
-                    <div className="content-flex">
-                        <div className="text-content">
-                            <h3>Energy Challenges</h3>
-                            <p className="conflict-explain-p-larger">
-                            One of the key dimensions of economic insecurity in the context of climate change is energy challenges. The world's energy systems are undergoing a transformation as countries strive to reduce their carbon footprint and transition to renewable energy sources. The transition to clean and sustainable energy is essential for mitigating the impacts of climate change. However, it comes with its own set of challenges, including the need for significant investments in infrastructure, the phasing out of fossil fuels, and ensuring energy security in a changing climate.
-                            </p>
-                        </div>
-                        <img src={energyImage} alt="Global Economy Chart" />
+                    <div className="text-content">
+                        <h3>Kentsel ve Kırsal Alanlar</h3>
+                        <p className="conflict-explain-p-larger">
+                        Kentsel alanlar, dünya nüfusunun çoğunluğuna ev sahipliği yaparken, inşa edilen yapılar, altyapılar ve ekonomik faaliyetlerin çoğunluğu da bu bölgelerdedir. İklim değişikliği etkileri ile meydana gelen aşırı hava olayları ve bağlı afetler nüfus yoğunluğunun fazla olduğu kentlerde büyük yıkımlara yol açar. Nüfus fazlalığı nedeniyle tehlike ve stres kaynaklarının mekânsal olarak yoğunlaştığı kentsel alanların şartları, kırsal alanlardan gelen göçlerle daha da zorlaşmaktadır. Kırsalda yaşayan topluluklar geçim kaynakları bakımından tarıma dolayısıyla doğal kaynaklara oldukça bağımlıdır. Bu nedenle iklim değişikliği kaynaklı zorluklar bu şartlardaki toplulukları daha savunmasız kılarken, doğal çevrede meydana gelen olumsuz etkiler kırsaldan kente göçlere sebep olmaktadır. Temel neden aşırı sıcaklık ve seller gibi felaketlerin tarım ve tarım dışı gelirleri düşürmesi ve gıda ve su gibi fiziksel ihtiyaç yoksunluğunun giderilme çabasıdır. Devlet düzeyinde afet yönetimi ve planlaması, altyapı dayanıklılığının arttırılması, yerinden edilmiş nüfusların yönetimine yönelik stratejilerin geliştirilmesi ve gittikçe nüfusu yoğunlaşan kentlerin kapsamlı gelişim planlamalarının yapılması gibi müdahaleler gereklidir.                        </p>
+                        <h3>Geçim ve Yoksulluk</h3>
+                        <p className="conflict-explain-p-larger">
+                        İklim değişikliği nedeniyle meydana gelen afet ve tehlikeler, yoksulluk düzeyinde yaşayan bireyler ve topluluklar açısından halihazırda var olan geçim sıkıntısını daha da ağırlaştırmaktadır. Yoksul topluluklar bu tehlikelerden, geçim kaynakları, mahsul verimliliklerinde düşüşler, evlerinin tahrip edilmesi, artan gıda fiyatları, gıda ve su güvensizliği gibi unsurlar aracılığıyla etkilemektedir. Ayrıca aşırı yağışlar ve kasırgalar gibi ani etkilerle baş edebilme açısından yoksullar, zenginlere göre daha savunmasızdır. Devlet düzeyinde sosyo-ekonomik etkilerinin yönetilmesi, tüm bireylere yönelik adil acil müdahale yöntemlerinin geliştirilmesi, savunmasız ve dezavantajlı gruplara yönelik sosyal yardımlar ve iyileştirmeler gibi müdahaleler gereklidir.                        </p>
                     </div>
                 </div>
 
                 <div className="economic-section">
                     <div className="text-content">
-                        <h3>Case Studies</h3>
-                        <p className="conflict-explain-p-larger">
-                        Real-world examples provide valuable insights into the economic challenges posed by climate change. This section presents case studies that highlight specific instances of economic insecurity caused by climate-related events. These cases offer practical lessons and illustrate the complexities of the issue.
-                        </p>
-                        <p className="conflict-explain-p-larger">
-                        By examining case studies from different parts of the world, we gain a deeper understanding of the diverse economic challenges posed by climate change. These examples underscore the importance of resilience and adaptation in the face of a changing climate.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="economic-section">
-                    <div className="text-content">
-                        <h3>Global Economic Impact</h3>
+                        <h3>Global Ekonomik Etki</h3>
                         <p className="conflict-explain-p-larger">
                         The global economic impact of climate change is a topic of great significance. Climate-related events, such as extreme weather events, rising sea levels, and changing precipitation patterns, can have far-reaching consequences on economies worldwide. In this section, we explore the wide-ranging effects of climate change on the global economy.
                         </p>
@@ -134,19 +118,28 @@ const Economic = () => {
                 <div className="economic-section">
                     <div className="content-flex">
                         <div className="text-content">
-                            <h3>Potential Solutions</h3>
+                            <h3>Enerji Güvenliği</h3>
                             <p className="conflict-explain-p-larger">
-                            Addressing economic insecurity and energy challenges in the era of climate change requires innovative solutions and strategies. In this section, we engage in a discussion of potential solutions to mitigate economic risks and promote sustainable economic growth.
-                            </p>
-                            <p className="conflict-explain-p-larger">
-                            From investing in green technologies to implementing climate-resilient infrastructure projects, there are numerous avenues for action. We explore policy initiatives, international collaborations, and private sector engagement as part of the toolkit to build economic resilience in the face of climate-related uncertainties.
-                            </p>
-                            <p className="conflict-explain-p-larger">
-                            This page serves as a comprehensive resource for understanding the intricate relationship between economic insecurity, energy challenges, and climate change. It emphasizes the importance of proactive measures and global cooperation in safeguarding our economic future in a changing climate.
-                            </p>
+                            Enerji güvenliği, bir ülkenin ekonomik ve sosyal kalkınması için güvenilir ve uygun fiyatlı bir enerji arzının güvence altına alınmasıdır. Enerji güvenliği kısa ve uzun vadede etkileri bağlamında farklı şekiller de tanımlanmaktadır. Örneğin, kısa vadede, ülkelerin kısa vadeli ihtiyaçlarını karşılamaları için arz güvenliğini sağlamaları ile ilgilidir. Uzun vadede ise, ülkelerin yeterli enerji tedarik edebilmek için enerji altyapısına gerekli miktarda yatırım yapmaları ile ilgilidir. Günümüzde temel enerji kaynakları, özellikle gelişmekte olan ülkeler açısından ucuz enerji kaynağı sağlayan fosil yakıtlardan oluşmaktadır. Dolayısıyla, petrol ve doğal gaz gibi fosil yakıtlara erişim enerji güvenliğinde önemli bir mesele haline gelmektedir. Enerji, sadece devletler için önemli bir kaynak değildir. İnsanlar da enerji güvensizliğinden etkilenen bir aktör niteliğine sahiptirler. Özellikle, son yıllarda küresel ölçekte artan nüfus ile birlikte enerji talebinde de bir artış söz konusudur. Devletlerin enerji kaynağı olarak ucuz enerji gücü olan fosil yakıtlara başvurması, insanın ve devletin enerji ihtiyacını karşılıyor olsa da, diğer yandan günümüzde etkileri hızla artan iklim değişikliğine neden olmaktadır. Bir başka ifadeyle, enerji talebi hem enerji güvenliğini sağlamakta, hem de iklim değişikliğine de neden olmaktadır. Fosil yakıtların yakılması atmosfere karbondioksit (CO2) gibi sera gazları salarak sera etkisini yoğunlaştırır ve böylece küresel ısınmaya katkıda bulunur.                             </p>
                         </div>
-                        <div className="side-image">
-                        <img src={lightImage} alt="Solution" />
+                    </div>
+                </div>
+
+                <div className="economic-section">
+                    <div className="content-flex">
+                        <div className="text-content">
+                            <p className="conflict-explain-p-larger">
+                            Enerji ve iklim değişikliği arasındaki ilişki bununla sınırlı kalmamaktadır. Enerji talebini sağlayan fosil yakıtların neden olduğu sera gazı emisyonları iklim değişikliğine neden olarak çevreyi etkilemekte, bu da enerji sistemlerini etkilemektedir. İklim değişikliği, enerji sektörüne zorluklar ve kırılganlıklar getirerek enerji güvenliğine tehdit oluşturmaktadır. Örneğin, kasırga, sel ve fırtına gibi aşırı hava olayları, enerji altyapısına zarar vermekte, enerji tedarik zincirlerini bozmakta ve elektrik kesintilerine yol açmaktadır. Bu tip hava olaylarına karşı savunmasız olan enerji sistemleri, iklim değişikliğinden etkilenmekte ve bir enerji güvensizliğine neden olmaktadır. Öte yandan, aşırı sıcaklığın neden olduğu kuraklık su kıtlığına yol açmaktadır. Enerji santrallerinde soğutma veya petrol ve gaz endüstrisinde çıkarma gibi birçok enerji üretim sürecinde su tüketimi yoğundur. Dolayısıyla, su kıtlığı enerji üretim kapasitesini azaltabilmekte ve enerji güvensizliğini artırabilmektedir.                            </p>
+                        </div>
+                        <img src={energyImage} alt="Global Economy Chart" />
+                    </div>
+                </div>
+
+                <div className="economic-section">
+                    <div className="content-flex">
+                        <div className="text-content">
+                            <p className="conflict-explain-p-larger">
+                            İklim değişikliğinin enerji kaynakları üzerindeki olumsuz etkileri, uygun fiyatlı ve güvenilir enerjiye erişimin yetersizliğini neden olarak toplumlar arasındaki sosyal eşitsizlikleri daha da artırmaktadır. İklim değişikliği ile mücadele ve enerji güvenliğinin sağlanması için fosil yakıtlardan uzaklaşılması ve daha temiz, yenilenebilir enerji kaynaklarının benimsenmesini gerekmektedir. Güneş ve rüzgar gibi yenilenebilir enerji kaynaklarına geçiş, enerji kaynaklarını çeşitlendirerek enerji güvenliğini artırmaktadır. Bir başka ifadeyle, dirençli ve sürdürülebilir enerji sistemlerine yatırım yapmak, iklim değişikliği kaynaklı sorunlar karşısında enerji güvenliğini güçlendirmektedir.                            </p>
                         </div>
                     </div>
                 </div>

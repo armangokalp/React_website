@@ -1,19 +1,4 @@
 
-/* .main-div{
-    overflow-y: auto;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-    ::-webkit-scrollbar {
-        display: none;
-    }
-} */
-
-
 .extreme-header-div {
     position: relative;
     top: 0%;
@@ -62,51 +47,38 @@
 .extreme-general-div {
     position: relative;
     margin: 0%;
-    height: 500px;
     width: 100%;
 }
 
-.extreme-explain-h1{
-    position: absolute;
+.extreme-explain-h1 {
+    position: relative;
     font-weight: bolder;
-    top: 10%;
+    /* top: 10%; */ /* Remove absolute positioning */
     left: 10%;
     font-size: 2.4rem;
-    margin: 0%;
-}
-.extreme-explain-p {
-    position: absolute;
-    font-size: 1.6rem;
+  }
+  
+  .extreme-explain-p {
+    position: relative;
+    font-size: 1.4rem;
     left: 10%;
-    top: 30%;
-    width: 60%;
-    margin: 0%;
-}
-
-.extreme-explain-p-larger {
-    position: absolute;
-    font-size: 1.6rem;
-    left: 10%;
-
-    top: 25%;
+    /* top: 30%; */ /* Remove absolute positioning */
     width: 80%;
-    margin: 0%;
-}
+  }
 
-
-.extreme-explain-img{
-    position: absolute;
+  
+  .extreme-explain-img {
+    position: relative;
     top: 30%;
     right: 10%;
     width: 200px;
     height: 200px;
-
-}
+  }  
 
 .extreme-impacts-div {
     position: relative;
-    margin: 0%;
     height: 600px;
+    margin-left: 10%;
     width: 100%;
 
 }
@@ -118,21 +90,10 @@
     left: 10%;
 
 }
-.extreme-impacts-p {
-    position: absolute;
-    font-size: 1.4rem;
-    top: 15%;
-    width: 80%;
-    margin: 0%;
-    left: 10%;
-
-}
 .extreme-photo-div{
     text-align: center;
-    position: absolute;
     bottom: 0%;
-    width: 100%;
-    height: 400px;
+    width: 80%;
 }
 .extreme-impacts-img-1{
     display: inline-block;

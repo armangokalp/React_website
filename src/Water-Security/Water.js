@@ -64,14 +64,14 @@ const Water = () => {
                             Su Güvenliği
                             </h1>
                 </div>
-                <div className='extreme-divider'/>
+                <div className='water-divider'/>
         
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Su güvensizliği, milyonlarca insanın hayatına dokunan bir küresel sorun olarak karşımıza çıkıyor. Bu sorun, su kıtlığından temiz içme suyuna erişim eksikliğine kadar bir dizi sorunu içerir. Dünya'nın birçok yerinde, topluluklar günlük olarak güvenli ve güvenilir su kaynakları bulma mücadelesi vermektedir. Bu kriz, sadece bireylerin refahını etkilemekle kalmaz, aynı zamanda bölge genelinde tehdit oluşturarak sınırlı su kaynakları üzerindeki çatışmaları tetikler.                    </p>
+                    Küresel iklim değişikliği buzulların erimesi, kar erime düzeninin değişmesi ve yağış düzenindeki değişiklikler gibi etkileriyle hidrolojik sistemleri çeşitli risklerle karşı karşıya bırakır. Tutulan su miktarı ve su kalitesini olumsuz etkiler. Su, iklim değişikliğinin etkilerini tarım, enerji ve ulaştırma sektörlerindeki etkileriyle topluma doğrudan yansıtan bir aracıdır. Kuraklık su arzı ve kalitesini etkilerken seller can ve mal kaybı, yerinden etme gibi risklere yol açar. Bireyler ve toplumlar açısından temiz suya erişim eksikliği ve acil sağlık riskleri söz konusudur. Gezegenin tamamı ise su ekosistemlerinin etkilenmesi nedeni ile biyolojik çeşitlilikte azalma ve ekosistem sağlığında bozulma tehlikesiyle karşı karşıyadır.                    </p>
                 </div>
                 
-                <div className='extreme-general-div'>
+                <div className='water-general-div'>
                     <div className='glass-continue'/>
                     <div className={`glass ${scrollingDown1 ? 'scrolling-down' : ''}`}>
                     </div>
@@ -81,18 +81,18 @@ const Water = () => {
 
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Su güvensizliğinin en ürkütücü yönlerinden biri, hijyen ve kamu sağlığı üzerindeki etkisidir. Temiz suya yetersiz erişimin olduğu bölgelerde, sıklıkla su kaynaklarının kirlenmesi sonucu su kaynaklı hastalıkların yayılması yaşanır. Kirli su kaynakları, kolera ve dizanteri gibi hastalıkların yayılmasına neden olur ve bu durum özellikle çocuklar ve yaşlılar gibi savunmasız nüfusu olumsuz etkiler.                    </p>
+                    Su güvenliği açısından tehditler oluşturan tüm bu koşullar bireyleri, devletleri ve ekosistemleri etkileyen birbirine bağlı çok yönlü riskler taşır. Azalan su kaynakları nedeniyle oluşan rekabet, çevresel bozulmalara ve su habitatlarının kaybına neden olurken, jeopolitik olarak su kıtlığı bireyler, topluluklar ve devletler arasında bir çatışma kaynağı haline gelebilir. Dolayısıyla tatlı su kaynaklarına erişim çabası gerilimin artmasına yol açabilir. Devlet düzeyinde sürdürülebilir su yöntemi stratejileri uygulanması ve su kıtlığı nedeniyle yaşanabilecek gerilimleri ele alma amacıyla stratejiler geliştirilmesi önemli mücadele unsurlarındandır.                    </p>
                 </div>
-                <div className='extreme-general-div'>
+                <div className='water-general-div'>
                  <img className='water-centered-img' src = "https://i.natgeofe.com/n/fcc3a9af-2d50-4bbf-8925-72e047a874ed/desertification-01_2x1.jpg"/>
                 </div>
 
                 <div className='water-general-div'>
                     <p className="water-explain-p">
-                    Su güvensizliği, sadece yerel bir sorun değildir; aynı zamanda jeopolitik gerilimler ve çatışmalara yol açma potansiyeline sahiptir. Tatlı su kaynakları daha da azalırken, ülkeler kendilerini "su savaşları" içinde bulabilirler. Bu, hayatta kalma meselesi olmanın ötesinde, hem insanların acı çekmesi hem de uluslararası ilişkiler açısından uzun vadeli sonuçlara yol açabilir. Su güvensizliğiyle başa çıkmak, sadece hayatta kalmak değil, aynı zamanda küresel istikrar ve sürdürülebilirlik için temel bir adımdır.                    </p>
+                    Sıcaklık artışı ve iklimin değişimi, kutup ve dağlık bölgelerde bulunan buzulların boyutu ve hacminde azalmalara neden olur. Buzulların erimesi, havzaların su mevcudiyetini ve kapasitesini etkiler. Böylece buralara bağlı yaşam sürdüren canlı ekosistemleri ve insan toplulukları etkilenir. Buzulların erimesi ile deniz seviyeleri yükselir, dolayısıyla şehirler ya da devletlerin kıyı bölgeleri için sular altında kalma riskleri oluşur. Yalnızca insanlar ve bağlı oldukları devletler için değil gezegene bağlı diğer canlı ekosistemleri de risk altındadır. Kutup ekosistemleri ve yaban hayatında değişen mevsimlik faaliyetler, besin zincirleri ve yaşam alanlarında bozulmalara yol açabilir. Devletler düzeyinde yapılacak müdahaleler, buzullarda gerçekleşen değişikliklerinin izlenmesi, burada bulunan ekosistemlerdeki etkilerin ele alınması, su yönetimine dair stratejilerin uygulanması, bağlı su kaynaklarında meydana gelen değişikliklerin ele alınması ve erimenin uzun vadeli etkilerinin planlanması gibi eylemleri içerir.                    </p>
                 </div>
                 <br/>
-                <div className='extreme-general-div'>
+                <div className='water-general-div'>
                     <div className={`glass-continue ${scrollingDown2 ? 'scrolling-down' : ''}`}/>
                     <div className= "glass scrolling-down" >
                     </div>

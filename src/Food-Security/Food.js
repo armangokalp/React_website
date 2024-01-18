@@ -30,17 +30,17 @@ const Food = () => {
         const scrollPosition = window.scrollY;
   
         // You can adjust the scroll position threshold based on your needs
-        if (scrollPosition > 250 && scrollPosition <800) {
+        if (scrollPosition > 250 && scrollPosition < 800) {
             setIsEnlarged1(true);
             setIsEnlarged2(false);
             setIsEnlarged3(false);
         }
-        else if (scrollPosition > 800 && scrollPosition <1200) {
+        else if (scrollPosition > 1000 && scrollPosition <1400) {
             setIsEnlarged1(false);
             setIsEnlarged2(true);
             setIsEnlarged3(false);
         }
-          else if (scrollPosition > 1200 && scrollPosition <1700) {
+          else if (scrollPosition > 1600 && scrollPosition <2100) {
             setIsEnlarged1(false);
             setIsEnlarged2(false);
             setIsEnlarged3(true);
@@ -77,7 +77,8 @@ const Food = () => {
                         <div className="extreme-divider" />
                         <div className={`food-general-div ${isEnlarged1 ? 'enlarged' : ''}`}>
                             <p className="food-explain-p left">
-                            Gıda güvenliği, toplumların sağlık ve refahını korumak için son derece önemli bir konsepttir. Sağlıklı ve güvenli gıdaların tüketilmesi, bireylerin hastalıklardan korunmasına ve sağlıklı bir yaşam sürdürmesine yardımcı olur. Ancak, gıda güvenliği sadece bireyler için değil, aynı zamanda toplumların ve ulusların genel ekonomik ve sosyal refahını da etkiler. Gıda kaynaklı hastalıkların yayılmasını önlemek, gıda tedarik zincirinin her aşamasında titizlikle uygulanan standartlar ve denetimler gerektirir. Ayrıca, gıda güvenliği, tarım, gıda üretimi ve dağıtımı süreçlerinin sürdürülebilirliği ile de yakından ilişkilidir.                            </p>
+                            Bireyler tarafından sağlıklı bir yaşamın devamlılığı için güvenli, yeterli ve besleyici gıdalara her zaman erişilebilmesi gıdalarının güvende olduğunu gösterir. Küresel iklim değişikliği gıda üretim sürecini dolayısıyla gıda güvenliğini etkilemektedir. Bu süreç tarımsal sistemlerin iklim değişikliği nedenli bozulmasını ve yetiştirme koşullarının değişimini içerir. Sıcaklık artışları, yağış düzeninde meydana gelen değişimler ve aşırı hava olaylarının şiddeti, yoğunluğu ve sıklığının artışı verimin düşmesine, mahsul kıtlığına, mahsullerde zarar ve hastalıkların artışına yol açabilmektedir. İklim şartlarında gerçekleşen değişimlerin olumsuz etkileri olumlu etkilere göre daha fazladır. Gıda güvenliği mahsullerin toplanması, hasat edilmesi depolanması, işlenmesi, taşınması ve atıkların yok edilmesini de içeren tüm bu süreçler ve altyapıların sağlanmasıyla ilişkilidir. Küresel iklimde meydana gelen değişiklikler ise bu sürecin tamamında olumsuz etkiler oluşturma riskine sahiptir.                           
+                            </p>
                             <img className='food-img right' src='https://static.vecteezy.com/system/resources/previews/016/733/039/original/hand-drawn-fruit-basket-illustration-png.png'/>
                         </div>
 
@@ -87,7 +88,7 @@ const Food = () => {
 
                         <div className={`food-general-div ${isEnlarged3 ? 'enlarged' : ''}`}>
                             <p className="food-explain-p right">
-                            Gıda güvenliği, dünya genelinde gıda üretimi ve tüketimi artarken daha da önemli hale gelmektedir. İklim değişikliği, doğal kaynakların azalması ve nüfus artışı gibi faktörler, gıda sistemlerine yeni zorluklar getirmektedir. Bu nedenle, sürdürülebilir tarım uygulamaları ve gıda üretimi yöntemlerinin benimsenmesi, gelecekteki gıda güvencesi için kritik öneme sahiptir. Ayrıca, gıda güvenliği politikalarının oluşturulması ve uygulanması, toplumların sağlık ve refahını korumak için ulusal ve uluslararası düzeydeki çabaları gerektirir.                            </p>
+                            Bireyler açısından bakıldığında özellikle tarıma bağlı hassas topluluklar, geleneksel gıda kaynaklarının iklime bağlı koşullarla güvenilmez hale gelmesiyle artan açlık ve yetersiz beslenme riskleriyle karşı karşıyadır. Bu durum, kentlerin de beslenmelerini tarıma bağlı kırsallardan sağladığı düşünüldüğünde toplumların tamamı için zamanla riskler oluşturabilecektir. Kısacası insan refahı etkilenecektir. İnsan faaliyetleri, aşırı hava olayları ve gerçekleşen yangın, sel ve fırtına gibi felaketlerin yol açtığı biyolojik çeşitlilik kaybı ise gezegenin tamamı için tehditlere neden olmaktadır. Ekosistemler arasında bulunan hassas denge bozulduğunda birey, toplum ve gezegen sağlığı arasındaki birbirine bağlı ilişkiler de bozulma riski taşımaktadır. Devletler düzeyinde gıda tedarikinin sağlanması, kıtlığın önlenmesi ve değişen iklime adaptasyon için sürdürülebilir tarım uygulamalarının hayata geçirilmesi gibi müdahaleler gereklidir.                             </p>
                             <img className='food-img left' src='https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fast-Food-PNG-Clipart/Sandwich_PNG_Clipart_Vector_Picture.png?m=1434276763'/>
                         </div>
                     </div>

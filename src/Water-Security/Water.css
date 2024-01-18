@@ -120,4 +120,17 @@ body {
 
 }
 
-  
+.water-divider{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: black;
+  margin: 0%;
+}
+
+.water-general-div {
+  position: relative;
+  margin: 0%;
+  height: 500px;
+  width: 100%;
+}

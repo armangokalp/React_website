@@ -41,30 +41,35 @@ body {
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 100px 0;
-    height: 370px;
     width: 80%;
+    min-height: 370px;
     left: 10%;
     border-radius: 50px;
     transition: transform 0.3s ease-in-out;
-    background-color: white ;
-}
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
 .food-general-div.enlarged {
     transform: scale(1.1); /* Enlarge the div by 10% on hover */
   }
-.food-explain-p {
-    position: absolute;
+  .food-explain-p {
     font-size: 1.4rem;
+    margin-left: 5%;
     top: 10%;
     width: 65%;
-    margin: 0%;
     color: black;
-}
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
 .food-explain-p.left {
     left: 5%;
 
 }
 .food-explain-p.right {
-    right: 5%;
+    margin-left: 30%;
 }
 .food-explain-h1{
 position: absolute;

@@ -47,19 +47,19 @@ const Extreme = () =>{
                 <div className="extreme-divider"/>
                 <div className="extreme-general-div">
                     <h1 className="extreme-explain-h1">
-                    What Are Extreme Climate Events?
+                    Aşırı Hava Olayları
                     </h1>
                     <p className="extreme-explain-p">
                     İklim değişikliği, aşırı sıcaklıklar ve aşırı yağışlar gibi hava olaylarını oluşturarak kuraklık, yangın, sel ve benzeri afetlerin sıklık, yoğunluk ve şiddetinin arttırmasına neden olur. Tüm bunlar bireyler, devletler ve gezegenin kendisi için doğrudan tehlikeler ve riskler oluşturur.
                     </p>
-                    <img className="extreme-explain-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png"/>
                 </div>
                 <div className="extreme-divider-thin"/>
+                
                 <div className="extreme-impacts-div">
-                    <h1 className="extreme-impacts-h1">
+                    <h1 className="extreme-general-h1">
                     Types of Extreme Climate Events
                     </h1>
-                    <p className="extreme-impacts-p">
+                    <p className="extreme-general-p">
                     Sıcak hava dalgaları, aşırı yağışlar ve dolu yağışı, seller, orman yangınları, kuraklık, kasırgalar, hortumlar, siklonlar, toprak kaymaları, çölleşme.
                     </p>
                     <div className="extreme-photo-div">
@@ -90,45 +90,76 @@ const Extreme = () =>{
 
                 <div className="extreme-general-div">
                     <h1 className="extreme-explain-h1">
-                    Impacts
+                    Sıcak Hava Dalgaları
                     </h1>
-                    <p className="extreme-explain-p-larger">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p className="extreme-explain-p">
+                    Küresel sıcaklıkların artışı ile birlikte sıcak hava dalgalarının meydana gelişi de daha sık, daha yoğun ve daha şiddetli olmaktadır. Dolayısıyla uzun süren aşırı sıcak dönemler, insan sağlığı için doğrudan bir tehdit oluşturur. Sıcaklığa bağlı olarak hastalıklar ve ölümler meydana gelir. Özellikle çocuklar, yaşlılar ve kronik hastalıkları bulunanlar daha fazla risk altındadır. Bununla beraber soğutma ihtiyacını karşılayamayan ve barınma ihtiyaçları bakımından daha korunaksız bölgelerde yaşayan yoksul kesimler gibi dezavantajlı nüfuslar da artan risklere karşı daha hassastır. Gezegenin bütününde ise aşırı sıcaklıklar bitki ve hayvan türlerini etkiler. Yeni şartlara uyum konusunda zorlanan türler açısından uzun dönemde azalma ya da yok olma gibi tehlikeler oluşabilir. Dolayısıyla biyolojik çeşitlilik tehdit altındadır. Devletler düzeyinde altyapı çalışmaları, müdahale planları, enerji talebine ilişkin yönetim stratejileri ve dezavantajlı gruplara yönelik sosyal yardımlar ve iyileştirmeler gibi eylemler gereklidir.                     </p>
                 </div>
                 <div className="extreme-divider-thin"/>
-
-                <div className="extreme-impacts-div">
-                    <h1 className="extreme-impacts-h1">
-                    Real-world examples
-                    </h1>
-                    <p className="extreme-impacts-p">e
-                    Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                </div>
-                <div className="extreme-divider"/>
 
                 <div className="extreme-general-div">
                     <h1 className="extreme-explain-h1">
-                    Mitigation and Adaptation Strategies
+                    Aşırı Yağışlar ve Dolu Yağışı
                     </h1>
-                    <p className="extreme-explain-p-larger">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p className="extreme-explain-p">
+                    İklimde meydana gelen değişimler daha yoğun, daha sık ve daha şiddetli yağmur ve dolu yağışlarına neden olur. Aşırı yağışlar, seller, toprak kaymaları vb. felaketlere yol açarak altyapılara zarar verir. Ayrıca mahsuller için risk oluşturarak tarım sektörünü de olumsuz etkiler. Bireyler ve toplumlar can ve mal kaybı, maddi hasar, yerinden edilme, altyapı ve ulaşımda aksamalar gibi risklerle gıda güvenliği ve ekonomik güvenlik açısından tehdit altındadır. Devletler düzeyinde altyapıların iyileştirilmesi ve daha dayanıklı hale getirilmesi, etkili afet yönetimi, arazi kullanımlarına yönelik planlamalar gibi müdahaleler gereklidir.                    </p>
+
                 </div>
                 <div className="extreme-divider-thin"/>
 
-
-                <div className="extreme-impacts-div">
-                    <h1 className="extreme-impacts-h1">
-                    Preparedness and Resilience
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Seller
                     </h1>
-                    <p className="extreme-impacts-p">e
-                    Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip x ea commodo con. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p className="extreme-explain-p">
+                    Buzulların erimesi ve aşırı yağışlar, su seviyelerinin yükselmesine ve daha yoğun, daha sık ve daha şiddetli su baskınlarına neden olmaktadır. Böylece sellerin oluşumunun ve etkisinin yoğunlaşması bireyler ve toplumlar için özellikle altyapı sorunları nedeniyle acil tehditler oluşturmaktadır. Can ve mal kayıpları ve yerinden edilme gibi birey ve toplumları tehdit eden bu risklerin dışında habitatın değişmesi, ekosistemlerin bozulması ve biyolojik çeşitliliğin azalması gibi gezegensel riskler de bulunmaktadır. Devletler düzeyinde seller ile meydana gelen acil sorunlarla ilgilenilmesi, etkili afet yönetimi, altyapı eksiklikleri ile ilişkili uzun vadeli dayanıklılık planlaması ve sürdürülebilir kalkınma stratejilerinin oluşturulması ve uygulanması gibi müdahaleler gereklidir.                     </p>
+                </div>
+                <div className="extreme-divider-thin"/>
 
-                </div>                
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Orman Yangınları
+                    </h1>
+                    <p className="extreme-explain-p">
+                    Aşırı sıcaklıklar ve yağış düzeninin değişimi kuru koşulların oluşumuna neden olarak orman yangınlarının sıklaşmasına yoğunlaşmasına ve şiddetlenmesine yol açar. Bireyler ve topluluklar orman yangınları nedeniyle evlerinin tahribi, yerinden edilme, can ve mal kayıpları ve hava kalitesinin kötüleşmesi gibi risklerle doğrudan tehditler altındadır. Bitki ve hayvanlar açısından da habitat kaybı gibi riskler öne çıkarken gezegensel ölçekte ekolojik dengede bozulmalar meydana gelmektedir. Devletler düzeyinde acil müdahale yöntemlerinin geliştirilmesi, uzun vadede etkili yangın azaltma ve önleme planlamalarının yapılması, orman yönetimi stratejileri ve sürdürülebilir arazi uygulamalarının geliştirilmesini içeren müdahaleler gereklidir.                    </p>
+
+                </div>   
+                <div className="extreme-divider-thin"/>
+
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Kuraklık
+                    </h1>
+                    <p className="extreme-explain-p">
+                    Aşırı sıcaklıklar ve yağış düzeninde meydana gelen değişiklikler buharlaşmayı arttırırken şiddetli ve uzun süreli kuraklıklara neden olur. Kuraklık su mevcudiyetini etkileyerek su kıtlığına yol açar. Dolayısıyla gezegendeki tüm türler bu durumdan etkilenirken ekosistemler de zarar görür. Tarımda ciddi etkiler yaratarak gıda güvensizliği oluşturur. Bu durum aynı zamanda ekonomik istikrarsızlıkları da tetikler. Bireyler, topluluklar ve gezegenin kendisi açısından bağlantılı sorunlara neden olan kuraklığa yönelik devletler düzeyinde su yönetimi stratejilerinin geliştirilmesi ve sürdürülebilir tarım uygulamalarına yönelik teşviklerin arttırılması gibi müdahaleler gereklidir.                    </p>
+                </div>         
+                <div className="extreme-divider-thin"/>
+
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Kasırgalar, Hortumlar ve Siklonlar
+                    </h1>
+                    <p className="extreme-explain-p">
+                    Küresel sıcaklık artışlarına bağlı olarak değişen iklim modelleri nedeniyle rüzgar olaylarının, gök gürültülü ve tropikal fırtınaların, hortumların, kasırga ve siklonların şiddeti, yoğunluğu ve sıklığı artmaktadır. Tüm bu şiddetli aşırı hava olayları bireyler ve toplumlar açısından can ve mal kayıpları, nüfusun yerinden edilmesi, altyapı hasarları, elektrik kesintileri ve ulaşımda aksaklıklar gibi tehditler oluşturur. Ayrıca kıyı taşkınlarını da şiddetlendirirken kıyı erozyonu, habitat kaybı ve ekosistemlerde bozulmalar gibi tehditlerle insanlar, diğer türler ve bütünüyle ekosistemler için hayati risklere neden olur. Devletler düzeyinde erken uyarı sistemlerinin geliştirilmesi, altyapı dayanıklılığının arttırılması, kıyı korunmasına yönelik önlemlerin alınması, etkili afet yönetimi ve planlaması gibi müdahaleler gereklidir.                </p>
+                </div>     
+                <div className="extreme-divider-thin"/>
+
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Toprak Kaymaları
+                    </h1>
+                    <p className="extreme-explain-p">
+                    İklim değişikliği nedeniyle sıklığı artan, şiddetlenen ve yoğunlaşan aşırı yağışlar, dağlık ve tepelik bölgelerde heyelan riskini arttırmaktadır. Doygun hale gelen toprak ve yamaçlarda oluşan dengesizleşmeyle oluşan heyelanlar, bireyler ve toplumlar açısından can ve mal kayıpları ve altyapı hasarları gibi tehditlere neden olurlar. Aynı zamanda ağaçlar ve diğer bitkilerin yerinden sökülmesi gibi etkileriyle ekosistemlere yönelik risklere de yol açarlar. Devletler düzeyinde yamaçların stabilize edilmesi amacıyla önlemler alınması, erken uyarı sistemlerinin geliştirilmesi ve arazi kullanım planlaması gibi müdahaleler gerekir.                    </p>
+                </div>
+                <div className="extreme-divider-thin"/>
+
+                <div className="extreme-general-div">
+                    <h1 className="extreme-explain-h1">
+                    Çölleşme
+                    </h1>
+                    <p className="extreme-explain-p">
+                    İklim değişikliği bir arazi tahribatı olan çölleşme sürecini hızlandırmaktadır. Bu doğrultuda daha önceki zamanlarda ekilebilir olan araziler çöl benzeri koşullara dönüşür. Sıcaklıkların artışı, yağış düzenlerinde değişimler ve sürdürülebilir olmayan yöntemlerle arazi kullanımları toprağın bozulmasına yol açarak arazi verimliliğinin azalmasına neden olur. Çölleşme bireyler ve topluluklar açısından yerinden edilme, ekilebilir arazilerin yok olması ve geçim kaynaklarının kaybı gibi tehditlere yol açmaktadır. Gezegenin bütünüyle ilişkili olarak da ekosistemlerde bozulmalar, verimli arazi kayıpları ve çevresel riskler karşısında kırılganlıkların artması gibi riskleri oluşturmaktadır. Devletler düzeyinde çölleşme ile mücadele kapsamında arazi yönetimi stratejilerinin geliştirilmesi, çölleşmenin sosyo-ekonomik etkilerinin yönetilmesi, bozulan arazilerin eski haline getirilmesi, arazi kullanımında sürdürülebilir uygulamaların teşvik edilmesi ve daha fazla çölleşmenin önlenmesini içeren küresel müdahaleler gerekir.                    </p>
+                </div>       
             </div>
         <Footer/>
 
