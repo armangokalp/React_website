@@ -28,6 +28,9 @@ const Gallery = ({ galleryData, seconds }) => {
             <h1>{data.title}</h1>
             <p>{data.explanation}</p>
           </div>
+          <div className='gallery-link'>
+            <a href= {data.link}>{"Sayfaya gitmek için tıklayın"}</a>
+          </div>
           <div className="gallery-image">
             <img src={data.imageSrc} alt={data.title} />
           </div>

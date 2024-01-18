@@ -1,13 +1,10 @@
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
 import { /*createTheme*/ ThemeProvider } from '@mui/material/styles';
 import Header from '../Header/Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import customTheme from '../customTheme'
 import Footer from '../Footer/Footer';
-import {post1,post2,post3} from "./blog-posts";
 import image0 from '../Images/image0.jpg';
-import { sections } from '../sections';
 import "./Gallery.css"
 import Gallery from './Gallery';
 import './Blog.css'
@@ -27,32 +24,74 @@ const mainFeaturedPost = {
   linkText: 'Continue reading…',
 };
 
-const galleryData = [
+const sabitLinkler = [
   {
-    title: 'Climate Securitization Ethics: Balancing Risks and Rights',
+    title: 'UNDP',
     explanation:
-      'A provocative look at the ethical crossroads of safeguarding our planet while protecting individual freedoms.',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+      "İklim güvenliği ve riskleri hakkında araştırma yapan UNDP'ye göz atın.",
+    imageSrc: "https://partnership.who.int/images/librariesprovider14/default-album/undp_logo.tmb-1200v.png?Culture=en&sfvrsn=906a1236_2",
+    link: "https://www.undp.org/",
   },
   {
     title: 'Water Wars: Global Crisis Unveiled',
     explanation:
       'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
     imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
   },
   {
     title: 'Water Wars:',
     explanation:
       'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
     imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
   },
   {
     title: 'Crisis Unveiled',
     explanation:
       'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
     imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
   },
 ];
+
+const dinamikLinkler = [
+  {
+    title: 'UNDP',
+    explanation:
+      "İklim güvenliği ve riskleri hakkında araştırma yapan UNDP'ye göz atın.",
+    imageSrc: "https://partnership.who.int/images/librariesprovider14/default-album/undp_logo.tmb-1200v.png?Culture=en&sfvrsn=906a1236_2",
+    link: "https://www.undp.org/",
+  },
+  {
+    title: 'Water Wars: Global Crisis Unveiled',
+    explanation:
+      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
+  },
+  {
+    title: 'Water Wars:',
+    explanation:
+      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
+  },
+  {
+    title: 'Crisis Unveiled',
+    explanation:
+      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
+    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
+    link: "https://www.undp.org/",
+
+  },
+];
+
 
 export default function Blog() {
 
@@ -76,8 +115,8 @@ export default function Blog() {
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <div className='galleries-div'>
-              <Gallery galleryData={galleryData} seconds = {5}/>
-              <Gallery galleryData={galleryData} seconds = {3}/>
+              <Gallery galleryData={sabitLinkler} seconds = {5}/>
+              <Gallery galleryData={dinamikLinkler} seconds = {3}/>
           </div>
           <table class="climate-table">
             <thead>
@@ -134,9 +173,12 @@ export default function Blog() {
             </tbody>
           </table>
         </main>
-      </div>
-      </div>
+        <br/>
       <Footer/>
+
+      </div>
+      </div>
+      
     </ThemeProvider>
   );
 }

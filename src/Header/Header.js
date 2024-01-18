@@ -8,7 +8,7 @@ const Header = ({ activeSection }) => {
         <div className='header-upper-container'>
             <a href='/'><img src={logo} className='header-logo' alt="Logo"/></a>
             <h1 className='header-title'>İklim Güvenliği ve Riskleri</h1>
-            <a href="" className='header-who'>Biz Kimiz?</a>
+            <a href="/BizKimiz" className='header-who'>Biz Kimiz?</a>
         </div>
         <div className='header-down-container'>
           {sections.map((section, index) => (  
