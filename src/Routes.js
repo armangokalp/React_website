@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import Who from "./Biz-Kimiz/Who";
 
 const Routers = () => {
     return (
@@ -29,7 +30,8 @@ const Routers = () => {
                     <Route path="/Conflict" element={<Conflict/>} />
                     <Route path="/Article" element={<Article/>} />
                     <Route path="/Article/:id" element={<Article/>} />
-                    <Route path="/Dev" element={<Footer/>} />
+                    <Route path="/BizKimiz" element={<Who/>} />
+                    <Route path="/Dev" element={<Who/>} />
                 </Route>
             </Routes>
         </Router>

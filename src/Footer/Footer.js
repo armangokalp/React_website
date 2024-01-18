@@ -13,7 +13,7 @@ const Footer = () => {
           <br/>
       <div className='footer-content'>
         <div className='footer-column'>
-        <a href="/bizkimiz">Biz Kimiz?</a>
+        <a href="/BizKimiz">Biz Kimiz?</a>
 
           {firstColumn.map((section) => (
             <a href={section.url} key={section.title}>

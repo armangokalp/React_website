@@ -1,0 +1,67 @@
+.who-header
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.who-main-div
+{
+    background-color: #228b2216;
+
+}
+.who-persons-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px 0 50px 0;
+    width: 100%;
+}
+.who-person-card
+{
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    margin: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.399);
+    background-color: rgba(255, 255, 255, 0.571);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    transition: transform 0.3s;
+}
+.who-person-card:hover
+{
+    transform: scale(1.05);
+}
+.who-person-card-img-div
+{
+    
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.who-person-card-img
+{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.who-person-card-text {
+    width: 250px;
+
+    text-align: left;
+}
+.who-divider
+{
+    background-color: rgba(0, 0, 0, 0.218);
+    width: 100%;
+    height: 2px;
+
+}
