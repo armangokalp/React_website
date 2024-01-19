@@ -22,7 +22,6 @@ function MainFeaturedPost(props, id) {
         backgroundImage: `url(${post.image})`,
       }}
     >
-      {/* Increase the priority of the hero background image */}
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <Box
         sx={{
@@ -52,7 +51,7 @@ function MainFeaturedPost(props, id) {
               </Typography>
             </Grid>
             <div className='box'>
-            <Link variant="subtitle1" href={"/Article/" + 0}>
+            <Link variant="subtitle1" href={"/dillemas"}>
                 {post.linkText}
             </Link>
             </div>

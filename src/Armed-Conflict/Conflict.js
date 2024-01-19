@@ -28,19 +28,111 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const conflictData = [
-    { id: 1, lat: 48.3794, lng: 31.1656, title: "Ukraine Conflict", description: "Russo-Ukrainian War: A major conflict in Eastern Europe affecting the global geopolitical landscape." },
-    { id: 2, lat: 34.8021, lng: 38.9968, title: "Conflict in Syria", description: "A multi-sided civil war with international involvement, leading to a major humanitarian crisis." },
-    { id: 3, lat: 17.5707, lng: 3.9962, title: "Insurgency in the Maghreb", description: "Mali War: Armed conflicts in the Maghreb region, particularly affecting Mali with significant displacement of people." },
-    { id: 4, lat: 23.6345, lng: 102.5528, title: "Mexican Drug War", description: "A conflict between government forces and various drug trafficking organizations, causing widespread violence." },
-    { id: 5, lat: 9.145, lng: 40.4897, title: "Ethiopian Civil Conflict", description: "An ongoing conflict in Ethiopia with significant regional and ethnic implications." },
-    { id: 6, lat: 12.8628, lng: 30.2176, title: "War in Sudan", description: "A series of conflicts in Sudan, including the Darfur genocide, leading to severe humanitarian issues." },
-    { id: 7, lat: 4.5709, lng: 74.2973, title: "Colombian Conflict", description: "An armed conflict in Colombia, primarily involving government forces and guerrilla groups." },
-    { id: 8, lat: 33.9391, lng: 67.7099, title: "Afghan Conflict", description: "Longstanding conflict in Afghanistan, involving various domestic and international actors." },
-    { id: 9, lat: 5.1521, lng: 46.1996, title: "Somali Civil War", description: "Ongoing conflict in Somalia, involving government forces, regional players, and extremist groups." },
-    { id: 10, lat: 4.0383, lng: 21.7587, title: "Conflict in the Congo", description: "Armed conflicts in the Democratic Republic of the Congo, particularly involving the Allied Democratic Forces." },
-    { id: 11, lat: 9.082, lng: 8.6753, title: "Nigerian Conflicts", description: "Communal conflicts in Nigeria, often related to resources, religion, and ethnicity." },
-    { id: 12, lat: 33.2232, lng: 43.6793, title: "Iraqi Conflict", description: "Ongoing conflict in Iraq, influenced by sectarian divisions and international interventions." },
-    { id: 13, lat: 34.9526, lng: 72.3311, title: "Insurgency in Pakistan", description: "Insurgency in Khyber Pakhtunkhwa, Pakistan, involving various militant groups and government forces." }
+    {
+        id: 1,
+        lat: 48.3794,
+        lng: 31.1656,
+        title: "Ukrayna Çatışması",
+        description: "Rus-Ukrayna Savaşı: Küresel jeopolitik manzarayı etkileyen Doğu Avrupa'daki önemli bir çatışma.",
+        link: "https://example.com/ukrayna-catisma"
+      },
+      {
+        id: 2,
+        lat: 34.8021,
+        lng: 38.9968,
+        title: "Suriye'deki Çatışma",
+        description: "Uluslararası katılımla çok taraflı bir iç savaş, büyük bir insani krize yol açıyor.",
+        link: "https://example.com/suriye-catisma"
+      },
+      {
+        id: 3,
+        lat: 17.5707,
+        lng: 3.9962,
+        title: "Maghreb Bölgesindeki İsyan",
+        description: "Mali Savaşı: Maghreb bölgesindeki silahlı çatışmalar, özellikle Mali'yi etkileyerek önemli bir göç dalgasına neden oluyor.",
+        link: "https://example.com/maghreb-isyan"
+      },
+      {
+        id: 4,
+        lat: 23.6345,
+        lng: 102.5528,
+        title: "Meksika Uyuşturucu Savaşı",
+        description: "Hükümet güçleri ile çeşitli uyuşturucu kaçakçılığı örgütleri arasındaki bir çatışma, yaygın şiddete neden oluyor.",
+        link: "https://example.com/meksika-uyusturucu-savasi"
+      },
+      {
+        id: 5,
+        lat: 9.145,
+        lng: 40.4897,
+        title: "Etiyopya İç Savaşı",
+        description: "Etiyopya'daki devam eden bir çatışma, bölgesel ve etnik etkileri olan önemli bir sorun.",
+        link: "https://example.com/etiyopya-ic-savasi"
+      },
+      {
+        id: 6,
+        lat: 12.8628,
+        lng: 30.2176,
+        title: "Sudan Savaşı",
+        description: "Sudan'daki bir dizi çatışma, özellikle Darfur soykırımını içerir ve ciddi insani sorunlara yol açar.",
+        link: "https://www.aa.com.tr/tr/dunya/sudandaki-ic-savasta-yerinden-edilenlerin-sayisi-6-milyonu-asti/3052160"
+      },
+      {
+        id: 7,
+        lat: 4.5709,
+        lng: 74.2973,
+        title: "Kolombiya Çatışması",
+        description: "Kolombiya'da hükümet güçleri ve gerilla gruplarını içeren silahlı bir çatışma.",
+        link: "https://example.com/kolombiya-catisma"
+      },
+      {
+        id: 8,
+        lat: 33.9391,
+        lng: 67.7099,
+        title: "Afganistan Çatışması",
+        description: "Afganistan'daki uzun süreli çatışma, çeşitli yerel ve uluslararası aktörleri içerir.",
+        link: "https://example.com/afganistan-catisma"
+      },
+      {
+        id: 9,
+        lat: 5.1521,
+        lng: 46.1996,
+        title: "Somali İç Savaşı",
+        description: "Somali'deki devam eden çatışma, hükümet güçleri, bölgesel oyuncular ve aşırılık gruplarını içerir.",
+        link: "https://example.com/somali-ic-savasi"
+      },
+      {
+        id: 10,
+        lat: 4.0383,
+        lng: 21.7587,
+        title: "Kongo'daki Çatışma",
+        description: "Demokratik Kongo Cumhuriyeti'nde (Kongo-Kinşasa) silahlı çatışmalar, özellikle İttifak Demokratik Güçleri'ni içerir.",
+        link: "https://example.com/kongo-catisma"
+      },
+      {
+        id: 11,
+        lat: 9.082,
+        lng: 8.6753,
+        title: "Nijerya Çatışmaları",
+        description: "Nijerya'daki kaynaklar, din ve etnik kökenle ilgili sık sık meydana gelen toplumsal çatışmalar.",
+        link: "https://example.com/nijerya-catisma"
+      },
+      {
+        id: 12,
+        lat: 33.2232,
+        lng: 43.6793,
+        title: "Irak Çatışması",
+        description: "Irak'taki süregelen çatışma, mezhep ayrılıkları ve uluslararası müdahalelerden etkilenir.",
+        link: "https://example.com/irak-catisma"
+      },
+      {
+        id: 13,
+        lat: 34.9526,
+        lng: 72.3311,
+        title: "Pakistan İsyanı",
+        description: "Pakistan'ın Khyber Pakhtunkhwa bölgesindeki isyan, çeşitli militan grupları ve hükümet güçlerini içerir.",
+        link: "https://example.com/pakistan-isyani"
+      }
+      
 ];
 
 const Conflict = () => {
@@ -105,6 +197,7 @@ const Conflict = () => {
                                 <Popup>
                                     <h3>{conflict.title}</h3>
                                     <p>{conflict.description}</p>
+                                    <a href={conflict.link} target="_blank" rel="noopener noreferrer">Daha fazla bilgi</a>
                                 </Popup>
                             </Marker>
                         ))}

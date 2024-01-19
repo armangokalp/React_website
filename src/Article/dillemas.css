@@ -1,0 +1,31 @@
+.page-container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .page-subtitle h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .page-content {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
+  
+  

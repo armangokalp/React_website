@@ -7,6 +7,7 @@ import Economic from "./Economic-Insecurity/Economic";
 import Migration from "./Climate-Induced-Migration/Migration";
 import Conflict from "./Armed-Conflict/Conflict";
 import Article from "./Article/ArticlePage"
+import Dillemas from "./Article/dillemas"
 import {
     BrowserRouter as Router,
     Routes,
@@ -32,6 +33,8 @@ const Routers = () => {
                     <Route path="/Article/:id" element={<Article/>} />
                     <Route path="/BizKimiz" element={<Who/>} />
                     <Route path="/Dev" element={<Who/>} />
+                    <Route path="/dillemas" element={<Dillemas/>} />
+
                 </Route>
             </Routes>
         </Router>

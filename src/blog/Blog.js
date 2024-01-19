@@ -74,16 +74,14 @@ export default function Blog() {
       <div>
 
 
-      {/*<Container maxWidth="lg"> */}
       <div className='main-padding'>
-            {/* <Header title="Climate Security and Risks" sections={sections} /> */}
             <Header/>
       <CssBaseline />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <div className='galleries-div'>
               <Gallery galleryData={sabitLinkler} seconds = {0}/>
-              <Gallery galleryData={dinamikLinkler} seconds = {5}/>
+              <Gallery galleryData={dinamikLinkler} seconds = {4}/>
           </div>
         <br/>
         <br/>
