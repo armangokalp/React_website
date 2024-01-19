@@ -23,24 +23,25 @@
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     display: flex;
 
-    transform: scale(0.95); /* Slight scaling effect for a smoother transition */
+    transform: scale(0.95);
   }
 
   .gallery-item:not(.active) {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Immediate transition for non-active items */
-    transform: scale(0.95); /* Slight scaling effect for a smoother transition */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(0.95);
 
   }
   
   .gallery-item.active {
     opacity: 1;
-    transform: scale(1); /* Restore the original scale for the active item */
+    transform: scale(1);
   }
   .gallery-text {
     position: absolute;
-    font-size: 1rem;
+    font-size: 0.8rem;
     left: 10%;
     width: 40%;
+    top: 3%;
   }
 
   .gallery-link {

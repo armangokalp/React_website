@@ -7,6 +7,8 @@ body {
     background-image: url("https://www.washingtonpost.com/resizer/NArbS1H867zl587z6xO9JbZIqSc=/arc-anglerfish-washpost-prod-washpost/public/TTNKPOGL4RE4HNA3VSUNALULTU.JPG");
     width: 100%;
     height: 700px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
     top: 0%;
     left: 0%;
@@ -59,7 +61,7 @@ body {
   }
 
   .glass.scrolling-down {
-    background-color: #3498db; /* Change this color to your desired background color */
+    background-color: #3498db;
   }
   .glass-continue {
     position: absolute;
@@ -74,7 +76,7 @@ body {
 
   }
   .glass-continue.scrolling-down {
-    background-color: #3498db; /* Change this color to your desired background color */
+    background-color: #3498db;
 
   }
   .glass-h1 {
@@ -118,6 +120,12 @@ body {
     max-height: 450px;
     margin: 0;
 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.water-centered-img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .water-divider{

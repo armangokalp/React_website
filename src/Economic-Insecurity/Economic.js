@@ -63,9 +63,8 @@ const Economic = () => {
 
       
     return (
-        <div className="main-padding">
-
         <ThemeProvider theme={customTheme}>
+        <div className="main-padding">
             <CssBaseline />
             <Header activeSection={3}/>
             
@@ -104,10 +103,9 @@ const Economic = () => {
                     <div className="text-content">
                         <h3>Global Ekonomik Etki</h3>
                         <p className="conflict-explain-p-larger">
-                        The global economic impact of climate change is a topic of great significance. Climate-related events, such as extreme weather events, rising sea levels, and changing precipitation patterns, can have far-reaching consequences on economies worldwide. In this section, we explore the wide-ranging effects of climate change on the global economy.
-                        </p>
+                        İklim değişikliğinin küresel ekonomi üzerindeki etkisi büyük bir öneme sahip bir konudur. Aşırı hava olayları, yükselen deniz seviyeleri ve değişen yağış desenleri gibi iklimle ilgili olaylar, dünya genelinde ekonomilere uzun vadeli etkileri olabilir. Bu bölümde, iklim değişikliğinin küresel ekonomi üzerindeki geniş kapsamlı etkilerini incelemekteyiz.                        </p>
                         <p className="conflict-explain-p-larger">
-                        From reduced agricultural productivity to increased healthcare costs associated with climate-related illnesses, the economic impact of climate change is multifaceted. We examine how these impacts vary across regions and sectors and discuss the urgent need for proactive measures to minimize economic losses.
+                        Azalan tarımsal üretkenlikten iklimle ilgili hastalıklara bağlı artan sağlık maliyetlerine kadar, iklim değişikliğinin ekonomik etkisi çok yönlüdür. Bu etkilerin bölgeler ve sektörler arasında nasıl değiştiğini inceliyor ve ekonomik kayıpları en aza indirmek için acil tedbirlerin gerekliliğini tartışıyoruz.
                         </p>
                         <div style={{ padding: '75px' }}>
                             {inView || <Line data={economicData} options={options} />}
@@ -144,10 +142,9 @@ const Economic = () => {
                     </div>
                 </div>
             </main>
-
-            <Footer/>
-        </ThemeProvider>
         </div>
+        <Footer/>
+        </ThemeProvider>
     )
 }
 

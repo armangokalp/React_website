@@ -1,6 +1,6 @@
 .footer-container {
     position: relative;
-    background-color: #f0f0f0; /* Set the desired background color */
+    background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
   }
@@ -28,7 +28,7 @@
  
   .footer-content {
     display: flex;
-    justify-content: center; /* Adjust spacing between columns */
+    justify-content: center;
   }
   
   .footer-column {
@@ -41,7 +41,7 @@
   .footer-content a {
     margin: 5px;
     text-decoration: none;
-    color: #333; /* Set the desired text color */
+    color: #333;
     transition: transform 0.1s ;
 
   }

@@ -9,7 +9,7 @@ import customTheme from '../customTheme'
 import './Food.css'
 import Footer from '../Footer/Footer';
 import image6 from '../Images/image6.jpg';
-import image5 from '../Images/image5.jpg';
+import tomato from '../Images/tomato.png';
 import { sections } from '../sections';
 import { useScrollToTop } from '../blog/useScrollToTop';
 
@@ -27,25 +27,24 @@ const Food = () => {
 
     useEffect(() => {
       const handleScroll = () => {
+        const screenHeight = window.innerHeight;
         const scrollPosition = window.scrollY;
-  
-        // You can adjust the scroll position threshold based on your needs
-        if (scrollPosition > 250 && scrollPosition < 800) {
+
+        const percentage = (scrollPosition / screenHeight) * 100;
+
+        if (percentage > 40 && percentage < 100) {
             setIsEnlarged1(true);
             setIsEnlarged2(false);
             setIsEnlarged3(false);
-        }
-        else if (scrollPosition > 1000 && scrollPosition <1400) {
+        } else if (percentage > 120 && percentage < 160) {
             setIsEnlarged1(false);
             setIsEnlarged2(true);
             setIsEnlarged3(false);
-        }
-          else if (scrollPosition > 1600 && scrollPosition <2100) {
+        } else if (percentage > 180 && percentage < 220) {
             setIsEnlarged1(false);
             setIsEnlarged2(false);
             setIsEnlarged3(true);
-        }
-         else {
+        } else {
             setIsEnlarged1(false);
             setIsEnlarged2(false);
             setIsEnlarged3(false);
@@ -82,8 +81,8 @@ const Food = () => {
                             <img className='food-img right' src='https://static.vecteezy.com/system/resources/previews/016/733/039/original/hand-drawn-fruit-basket-illustration-png.png'/>
                         </div>
 
-                        <div className={`food-general-div ${isEnlarged2 ? 'enlarged' : ''}`}>
-                            <div className='food-full-img' src='https://gfi.org/wp-content/uploads/2022/10/POL220137_Climate-Advisers-web-graphics_header-feature.jpg'/>                     </div>
+                        <div className={`food-general-div-img ${isEnlarged2 ? 'enlarged' : ''}`}>
+                            <img className='food-full-img' src='https://nationalfoodinstitute.com.au/nfi/wp-content/uploads/2022/10/Screen-Shot-2022-10-17-at-4.19.15-pm.png'/>                     </div>
                         <div className="divider" />
 
                         <div className={`food-general-div ${isEnlarged3 ? 'enlarged' : ''}`}>
@@ -93,9 +92,8 @@ const Food = () => {
                         </div>
                     </div>
                 </main>
-            <Footer/>
-
             </div>
+            <Footer/>
         </ThemeProvider>
     );
 };

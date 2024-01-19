@@ -146,9 +146,10 @@ export default function Blog() {
         <br/>
         <br/>
         <br/>
-      <Footer/>
 
       </div>
+      <Footer/>
+
       </div>
       
     </ThemeProvider>

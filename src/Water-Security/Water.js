@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './Water.css'; // You can create this file for your styles
+import './Water.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header/Header';
 import customTheme from '../customTheme'
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from '../Footer/Footer';
-import { sections } from '../sections';
 import { useScrollToTop } from '../blog/useScrollToTop';
 
 const defaultTheme = createTheme();
@@ -15,6 +14,19 @@ const defaultTheme = createTheme();
 const Water = () => {
 
   useScrollToTop();
+
+  const [openImage, setOpenImage] = useState(null);
+  const [imageScale, setImageScale] = useState(1);
+
+  const handleImageClick = (image) => {
+      setOpenImage(image);
+      setImageScale(1.7);
+  };
+
+  const handleCloseModal = () => {
+      setOpenImage(null);
+      setImageScale(1);
+  };
 
   const [scrollingDown1, setScrollingDown1] = useState(false);
   const [scrollingDown2, setScrollingDown2] = useState(false);
@@ -25,27 +37,21 @@ const Water = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      // Calculate scroll position as a percentage
       const scrollPercentage = (scrollY / (documentHeight - windowHeight)) * 100;
 
-      if (scrollPercentage > 40 && scrollPercentage < 95) {
-        // Apply styles when the scroll position exceeds 25%
+      if (scrollPercentage > 35 && scrollPercentage < 95) {
         setScrollingDown1(true);
       } 
       else if (scrollPercentage > 95) {
-        // Apply styles when the scroll position exceeds 70%
         setScrollingDown2(true);
       } else {
-        // Reset styles when below the specified percentages
         setScrollingDown1(false);
         setScrollingDown2(false);
       }
     };
 
-    // Add event listener for the scroll event
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -84,7 +90,7 @@ const Water = () => {
                     Su güvenliği açısından tehditler oluşturan tüm bu koşullar bireyleri, devletleri ve ekosistemleri etkileyen birbirine bağlı çok yönlü riskler taşır. Azalan su kaynakları nedeniyle oluşan rekabet, çevresel bozulmalara ve su habitatlarının kaybına neden olurken, jeopolitik olarak su kıtlığı bireyler, topluluklar ve devletler arasında bir çatışma kaynağı haline gelebilir. Dolayısıyla tatlı su kaynaklarına erişim çabası gerilimin artmasına yol açabilir. Devlet düzeyinde sürdürülebilir su yöntemi stratejileri uygulanması ve su kıtlığı nedeniyle yaşanabilecek gerilimleri ele alma amacıyla stratejiler geliştirilmesi önemli mücadele unsurlarındandır.                    </p>
                 </div>
                 <div className='water-general-div'>
-                 <img className='water-centered-img' src = "https://i.natgeofe.com/n/fcc3a9af-2d50-4bbf-8925-72e047a874ed/desertification-01_2x1.jpg"/>
+                 <img className='water-centered-img' src = "https://i.natgeofe.com/n/fcc3a9af-2d50-4bbf-8925-72e047a874ed/desertification-01_2x1.jpg"   onClick={() => handleImageClick("https://i.natgeofe.com/n/fcc3a9af-2d50-4bbf-8925-72e047a874ed/desertification-01_2x1.jpg")}/>
                 </div>
 
                 <div className='water-general-div'>
@@ -103,10 +109,13 @@ const Water = () => {
 
 
             </main>
-        <Footer/>
-
         </div>
-
+        {openImage && (
+                <div className="modal" onClick={handleCloseModal}>
+                    <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
+                </div>
+            )}
+        <Footer/>
     </ThemeProvider>
   );
 };

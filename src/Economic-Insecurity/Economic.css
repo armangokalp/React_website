@@ -2,6 +2,8 @@
     background-image: url('../Images/economic3.jpeg');
     width: 100%;
     height: 700px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-position: center;
     background-size: cover;
     display: flex;

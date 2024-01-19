@@ -11,7 +11,8 @@ body {
     width: 100%;
     height: 700px;
     margin: 0;
-    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-image: url("https://data.unicef.org/wp-content/uploads/2022/07/SOFI-hero-image-1-scaled-e1657120636728.jpg");
     background-position: right center;
 }
@@ -36,7 +37,8 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.food-general-div {
+.food-general-div,
+.food-general-div-img {
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,19 +52,25 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
-.food-general-div.enlarged {
-    transform: scale(1.1); /* Enlarge the div by 10% on hover */
-  }
-  .food-explain-p {
-    font-size: 1.4rem;
-    margin-left: 5%;
-    top: 10%;
-    width: 65%;
-    color: black;
-    flex-grow: 1;
-    overflow: auto;
-  }
+
+.food-general-div-img {
+    height: 370px;
+}
+
+
+.food-general-div.enlarged,
+.food-general-div-img.enlarged {
+    transform: scale(1.1);
+}
+.food-explain-p {
+font-size: 1.4rem;
+margin-left: 5%;
+top: 10%;
+width: 65%;
+color: black;
+flex-grow: 1;
+overflow: auto;
+}
   
 .food-explain-p.left {
     left: 5%;
@@ -99,8 +107,9 @@ margin: 0%;
     background-image: url("https://nationalfoodinstitute.com.au/nfi/wp-content/uploads/2022/10/Screen-Shot-2022-10-17-at-4.19.15-pm.png");
     background-position: center center; 
     width: 100%;
-    height: 100%;
-    margin: 0%;
+    height: 160%;
+    object-fit: cover;
+    margin-top: -10%;
     background-size: 100% auto;
 }
 

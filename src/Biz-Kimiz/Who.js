@@ -11,12 +11,13 @@ import { useScrollToTop } from '../blog/useScrollToTop';
 import PersonCard from './PersonCard';
 import SezenImg from "../Images/SezenImg.jpg"
 import CaglaImg from "../Images/CaglaImg.jpg"
+import ben from "../Images/ben.jpg"
 
 const defaultTheme = createTheme();
 const persons = [
     { name: 'Başar Baysal', image: 'https://pbs.twimg.com/profile_images/1687854148966883328/yXb4UhhZ_400x400.jpg', explanation: "Ekip Lideri" },
     { name: 'Ali Vehbi Güneysu', image: 'https://alivehbiguneysu.net/static/media/myPhoto.aec4a690d0b700cc2821.jpg', explanation: "Geliştirici" },
-    { name: 'Arman Gökalp', image: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg', explanation: "Geliştirici" },
+    { name: 'Arman Gökalp', image: ben, explanation: "Geliştirici" },
     { name: 'Çağla Vural', image: CaglaImg, explanation: "İçerik Sorumlusu" },
     { name: 'Sezen Kaya Sönmez', image: SezenImg, explanation: "İçerik Sorumlusu" },
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import "./Conflict.css";
@@ -11,6 +11,8 @@ import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import { sections } from '../sections';
 import { useScrollToTop } from '../blog/useScrollToTop';
+import image1 from "../Images/conflict0.jpeg";
+import image2 from "../Images/conflict2.jpeg";
 
 
 
@@ -43,10 +45,23 @@ const conflictData = [
 
 const Conflict = () => {
     useScrollToTop();
-    return (
-        <div className="main-padding">
 
+    const [openImage, setOpenImage] = useState(null);
+    const [imageScale, setImageScale] = useState(1);
+
+    const handleImageClick = (image) => {
+        setOpenImage(image);
+        setImageScale(1.3);
+    };
+
+    const handleCloseModal = () => {
+        setOpenImage(null);
+        setImageScale(1);
+    };
+
+    return (
         <ThemeProvider theme={customTheme}>
+        <div className="main-padding">
         <Header activeSection={5}/>
             
             <main>
@@ -63,19 +78,19 @@ const Conflict = () => {
                     <p className="conflict-explain-p-larger">
                     İklim değişikliği doğrudan çatışmaya neden olmasa da, toplumlardaki mevcut kırılganlıkları ve stres faktörlerini artırarak bir tehdit çarpanı görevi görmektedir. Bir başka ifadeyle, iklim değişikliği genellikle çatışmanın temelini oluşturan eşitsizlikleri ve kırılganlıkları artırmakta ve birleştirmektedir. Deniz seviyesinin yükselmesi, arazi bozulması, kıyı erozyonu, aşırı sıcaklık gibi iklim değişikliğinin etkileri, tüm alanları yaşanmaz hale getirmekte, kırsal geçim kaynaklarının yaşanabilirliğini tehdit etmekte ve kaynaklar üzerindeki rekabeti teşvik etmektedir. Örneğin, yağış düzenindeki değişiklikler, kuraklık ve kıtlık bir toplumda halihazırda var olan mevcut gerilimleri artırmaktadır. Kıt kaynaklar için rekabet, özellikle bu kaynaklara erişimin hayatta kalmak için çok önemli olduğu bölgelerde gerilimleri artırmakta ve çatışmalara katkıda bulunmaktadır.                     </p>
                 </div>
-                <div className="section-image0"> </div>
+                <div className="section-image0" onClick={() => handleImageClick(image1)}> </div>
 
                 <div className="armed-causes-section">
                     <h3>İklim Değişikliği ve Kaynak Çatışmalarının Yıkıcı Etkileri</h3>
                     <p className="conflict-explain-p-larger">
                     Aşırı hava olayları, seller ve sıcak hava dalgaları gibi iklimle ilgili olaylar tarımı etkileyerek ürün kıtlığına, gıda fiyatlarında artışa ve geçim kaynaklarının kaybına yol açmaktadır. Bu durum ekonomik istikrarsızlığa neden olmakta ve topluluklar kaynaklar için rekabet etmekte, ve böylece çatışma riskini artmaktadır. Dolayısıyla, iklimle ilgili stresler mevcut yönetişim sorunlarını daha da kötüleştirerek hükümetlerin temel hizmetleri sağlamasını, krizlere müdahale etmesini ve sosyal düzeni korumasını zorlaştırmaktadır. Düşük gelirli ülkeler, kırılgan ve istikrarsız siyasi ortamlarda üstesinden gelinmesi özellikle zor olan ekonomik şoklar, zorunlu göç ve siyasi kurumların bozulması riskiyle daha fazla karşı karşıyadır.  İklim değişikliği ve çatışma arasındaki ilişki karmaşık ve bağlama özgüdür, ancak iklim değişikliğinin gıda güvensizliğini, su kıtlığını ve kaynak rekabetini artırırken geçim kaynaklarını bozan ve göçü teşvik eden bir tehdit çarpanı olduğu bir gerçektir.                     </p>
                 </div>
-                <div className="section-image"> </div>
+                <div className="section-image" onClick={() => handleImageClick(image2)}> </div>
 
                 <div className="armed-causes-section">
                     <h3>Devam Eden Çatışmaların Küresel Haritası</h3>
                     <p className="conflict-explain-p-larger">
-                        The map below illustrates ongoing conflicts around the world exacerbated by climate change.
+                        Aşağıdaki harita, iklim değişikliği tarafından daha da kötüleştirilen dünya genelindeki devam eden çatışmaları göstermektedir.
                     </p>
                     <MapContainer center={[30, 30]} zoom={3} style={{ height: '500px', width: '100%' }}>
                         <TileLayer
@@ -97,9 +112,14 @@ const Conflict = () => {
                 </div>
 
             </main>
-            <Footer/>
-        </ThemeProvider>
         </div>
+        {openImage && (
+                <div className="modal" onClick={handleCloseModal}>
+                    <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
+                </div>
+            )}
+        <Footer/>
+        </ThemeProvider>
     );
 };
 

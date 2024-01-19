@@ -19,7 +19,7 @@
 
 .climate-table tbody tr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
 }
 
 .climate-table tbody tr:nth-child(odd) {

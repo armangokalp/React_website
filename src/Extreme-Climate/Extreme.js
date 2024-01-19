@@ -161,8 +161,6 @@ const Extreme = () =>{
                     İklim değişikliği bir arazi tahribatı olan çölleşme sürecini hızlandırmaktadır. Bu doğrultuda daha önceki zamanlarda ekilebilir olan araziler çöl benzeri koşullara dönüşür. Sıcaklıkların artışı, yağış düzenlerinde değişimler ve sürdürülebilir olmayan yöntemlerle arazi kullanımları toprağın bozulmasına yol açarak arazi verimliliğinin azalmasına neden olur. Çölleşme bireyler ve topluluklar açısından yerinden edilme, ekilebilir arazilerin yok olması ve geçim kaynaklarının kaybı gibi tehditlere yol açmaktadır. Gezegenin bütünüyle ilişkili olarak da ekosistemlerde bozulmalar, verimli arazi kayıpları ve çevresel riskler karşısında kırılganlıkların artması gibi riskleri oluşturmaktadır. Devletler düzeyinde çölleşme ile mücadele kapsamında arazi yönetimi stratejilerinin geliştirilmesi, çölleşmenin sosyo-ekonomik etkilerinin yönetilmesi, bozulan arazilerin eski haline getirilmesi, arazi kullanımında sürdürülebilir uygulamaların teşvik edilmesi ve daha fazla çölleşmenin önlenmesini içeren küresel müdahaleler gerekir.                    </p>
                 </div>       
             </div>
-        <Footer/>
-
             </main>
             </div>
             {openImage && (
@@ -170,6 +168,7 @@ const Extreme = () =>{
                     <img className="modal-content" src={openImage} alt="Enlarged view" />
                 </div>
             )}
+    <Footer/>
     </ThemeProvider>
     )
 }
