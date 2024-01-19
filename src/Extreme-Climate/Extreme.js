@@ -40,7 +40,7 @@ const Extreme = () =>{
                 <div className="extreme-header-div">
                     <div className="extreme-h-div">
                         <h1 className="extreme-header-text">
-                        Extreme Climate Events: Understanding the Risks
+                        Aşırı Hava Olayları ve İklim Değişikliği: Tehlike ve Sonuçları
                         </h1>
                     </div>
                 </div>

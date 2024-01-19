@@ -83,7 +83,7 @@ export default function Blog() {
           <MainFeaturedPost post={mainFeaturedPost} />
           <div className='galleries-div'>
               <Gallery galleryData={sabitLinkler} seconds = {0}/>
-              <Gallery galleryData={dinamikLinkler} seconds = {3}/>
+              <Gallery galleryData={dinamikLinkler} seconds = {5}/>
           </div>
         <br/>
         <br/>

@@ -1,6 +1,6 @@
 .climate-table {
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 10% 0 10% 0;
     font-family: Arial, sans-serif;
 
 }
@@ -24,6 +24,8 @@
 
 .climate-table tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
+    border-radius: 10px;
+
 }
 
 .climate-table tbody tr:hover {

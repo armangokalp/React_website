@@ -15,7 +15,7 @@ const Gallery = ({ galleryData, seconds }) => {
     let interval;
 
     if (seconds !== 0) {
-      interval = setInterval(handleNext, seconds * 2000); // Call handleNext every specified seconds
+      interval = setInterval(handleNext, seconds * 1000); // Call handleNext every specified seconds
     }
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount or if autoChange is false

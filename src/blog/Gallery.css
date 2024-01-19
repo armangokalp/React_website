@@ -8,9 +8,9 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    background-color: #e0e0e0; /* Light grey background color */
-    border-radius: 10px; /* Adjust the border-radius as needed for a smooth corner */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 47%;
     height: 330px;
   }

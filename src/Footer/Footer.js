@@ -14,6 +14,7 @@ const Footer = () => {
       <div className='footer-content'>
         <div className='footer-column'>
         <a href="/BizKimiz">Biz Kimiz?</a>
+        
 
           {firstColumn.map((section) => (
             <a href={section.url} key={section.title}>
