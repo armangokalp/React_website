@@ -10,7 +10,7 @@ import Gallery from './Gallery';
 import './Blog.css'
 import { useNavigate } from 'react-router-dom';
 import "../Article/ArticlePage.css"
-
+import { sabitLinkler } from './Linkler';
 
 
 
@@ -24,39 +24,6 @@ const mainFeaturedPost = {
   linkText: 'Continue reading…',
 };
 
-const sabitLinkler = [
-  {
-    title: 'UNDP',
-    explanation:
-      "İklim güvenliği ve riskleri hakkında araştırma yapan UNDP'ye göz atın.",
-    imageSrc: "https://partnership.who.int/images/librariesprovider14/default-album/undp_logo.tmb-1200v.png?Culture=en&sfvrsn=906a1236_2",
-    link: "https://www.undp.org/",
-  },
-  {
-    title: 'Water Wars: Global Crisis Unveiled',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
-
-  },
-  {
-    title: 'Water Wars:',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
-
-  },
-  {
-    title: 'Crisis Unveiled',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
-
-  },
-];
 
 const dinamikLinkler = [
   {
@@ -115,9 +82,12 @@ export default function Blog() {
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <div className='galleries-div'>
-              <Gallery galleryData={sabitLinkler} seconds = {5}/>
+              <Gallery galleryData={sabitLinkler} seconds = {0}/>
               <Gallery galleryData={dinamikLinkler} seconds = {3}/>
           </div>
+        <br/>
+        <br/>
+
           <table class="climate-table">
             <thead>
                 <tr>
@@ -173,6 +143,8 @@ export default function Blog() {
             </tbody>
           </table>
         </main>
+        <br/>
+        <br/>
         <br/>
       <Footer/>
 

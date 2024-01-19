@@ -12,10 +12,16 @@ const Gallery = ({ galleryData, seconds }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, seconds * 1000); // Call handleNext every 3 seconds
+    let interval;
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
-  }, []); 
+    if (seconds !== 0) {
+      interval = setInterval(handleNext, seconds * 1000); // Call handleNext every specified seconds
+    }
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount or if autoChange is false
+  }, [seconds, handleNext]);
+
+
 
   return (
     <div className="gallery-container">
@@ -29,10 +35,10 @@ const Gallery = ({ galleryData, seconds }) => {
             <p>{data.explanation}</p>
           </div>
           <div className='gallery-link'>
-            <a href= {data.link}>{"Sayfaya gitmek için tıklayın"}</a>
+            <a href={data.link}>{"Sayfaya gitmek için tıklayın"}</a>
           </div>
           <div className="gallery-image">
-            <img src={data.imageSrc} alt={data.title} />
+            <img className='gallery-image-img' src={data.imageSrc} alt={data.title} />
           </div>
 
         </div>
@@ -40,10 +46,23 @@ const Gallery = ({ galleryData, seconds }) => {
       ))}
       <button className="nav-button left" onClick={handlePrev}>
             <i className="fas fa-chevron-left"></i>
-          </button>
-          <button className="nav-button right" onClick={handleNext}>
+      </button>
+      <button className="nav-button right" onClick={handleNext}>
             <i className="fas fa-chevron-right"></i>
-          </button>
+      </button>
+      <div className='bubble-div'>
+
+      {galleryData.map((data, index) => (
+        <div
+          key={index}
+          className={`bubble ${index === activeIndex ? 'active' : ''}`}
+          onClick={() => {setActiveIndex(index)}}
+        >
+        </div>
+        
+      ))}
+      </div>
+          
     </div>
   );
 };

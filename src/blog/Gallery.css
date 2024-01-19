@@ -12,7 +12,7 @@
     border-radius: 10px; /* Adjust the border-radius as needed for a smooth corner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
     width: 47%;
-    height: 300px;
+    height: 330px;
   }
   
   .gallery-item {
@@ -20,14 +20,14 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 4s ease-in-out, transform 2s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     display: flex;
 
     transform: scale(0.95); /* Slight scaling effect for a smoother transition */
   }
 
   .gallery-item:not(.active) {
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Immediate transition for non-active items */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Immediate transition for non-active items */
     transform: scale(0.95); /* Slight scaling effect for a smoother transition */
 
   }
@@ -49,32 +49,26 @@
     font-weight: bold;
     left: 10%;
     width: 40%;
-    bottom: 5%;
+    bottom: 15%;
   }
 
    
   .gallery-image {
     position: absolute;
     right: 10%;
-    width: 40%;
-    top: 10%;
-    justify-content: center;
-    align-items: center;
+    width: 35%;
+    height: 80%;
+    top: 5%;
   }
   
-  .gallery-image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    width: auto;
+  .gallery-image-img {
+
+    height: 100%;
+    width: 100%;
     object-fit: contain;
-    margin-right: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  /* Existing CSS... */
-
-
 
 .nav-button {
   position: absolute;
@@ -102,6 +96,30 @@
 .nav-button:hover {
   color: black; /* Change background color on hover */
   font-size: 35px;
+}
+.bubble-div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+.bubble
+{
+  display: flex;
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.bubble.active
+{
+  transform: scale(1.5);
+  margin: 2px 5px;
 }
 
 /* Existing CSS... */
