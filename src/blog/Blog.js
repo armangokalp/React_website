@@ -16,12 +16,12 @@ import { sabitLinkler } from './Linkler';
 
 
 const mainFeaturedPost = {
-  title: 'Navigating The Dilemmas of Climate Security',
+  title: 'İklim Güvenliği Sorunlarını Yönlendirmek',
   description:
-    "Climate change manifests as a threat to three distinct referent objects, encapsulating anthropocentric, eco-centric, and state-centric perspectives.",
+    'İklim değişikliği, antroposentrik, ekosentrik ve devlet-merkezli perspektifleri kapsayan üç ayrı referans nesnesine tehdit olarak ortaya çıkar.',
   image: image0,
   imageText: 'main image description',
-  linkText: 'Continue reading…',
+  linkText: 'Okumaya devam et',
 };
 
 

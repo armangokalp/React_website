@@ -13,6 +13,7 @@ import { sections } from '../sections';
 import migrationImage from '../Images/migration.jpeg';
 import Image4 from '../Images/image4.png';
 import { useScrollToTop } from '../blog/useScrollToTop';
+import image from "../Images/migration2.jpeg";
 
 const defaultTheme = createTheme();
 
@@ -36,6 +37,19 @@ const migrationData = {
 const Migration = () => {
 
     useScrollToTop();
+
+    const [openImage, setOpenImage] = useState(null);
+    const [imageScale, setImageScale] = useState(1);
+
+    const handleImageClick = (image) => {
+        setOpenImage(image);
+        setImageScale(1.5);
+    };
+
+    const handleCloseModal = () => {
+        setOpenImage(null);
+        setImageScale(1);
+    };
 
     const [chartVisible, setChartVisible] = useState(false);
     const { ref, inView } = useInView({
@@ -83,7 +97,7 @@ const Migration = () => {
                             İklim nedenli göç, küresel bir olgu olsa da, bu sorunu etkilenen bireyler ve toplulukların gerçek hikayelerini paylaşarak insancıllaştırmak önemlidir. Bu hikayeler, iklim göçmenlerinin kişisel deneyimlerini, karşılaştıkları zorlukları ve dirençlerini vurgular. Bazı gerçek hikayeler şunları içerir:
                         </p>
                         </div>
-                        <div className="migration-image"></div>
+                        <div className="migration-image" onClick={() => handleImageClick(image)}></div>
                     </div>
                     <div className="migration-real-stories">
                     <div className="migration-text-center">
@@ -114,6 +128,11 @@ const Migration = () => {
                 </main>
             </div>
             <Footer/>
+        {openImage && (
+            <div className="modal" onClick={handleCloseModal}>
+                <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
+            </div>
+        )}
         </ThemeProvider>
     );
 };

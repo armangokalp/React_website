@@ -55,16 +55,15 @@
 .extreme-explain-h1 {
     position: relative;
     font-weight: bolder;
-    /* top: 10%; */ /* Remove absolute positioning */
     left: 10%;
     font-size: 2.4rem;
+    margin-top: 5%;
   }
   
   .extreme-explain-p {
     position: relative;
     font-size: 1.4rem;
     left: 10%;
-    /* top: 30%; */ /* Remove absolute positioning */
     width: 80%;
   }
 
@@ -98,16 +97,9 @@
     width: 80%;
 }
 .extreme-impacts-img-1{
-    display: inline-block;
-    object-fit: cover;
-    object-position: center right;
-
-    border-radius: 5%;
-    margin: 50px 2% 0px;
-    width: 350px;
-    height: 350px;
+    margin-bottom: 1%;
+    margin-top: 2%;
 }
-
 
 .modal {
     position: fixed;

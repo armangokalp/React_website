@@ -206,12 +206,12 @@ const Conflict = () => {
 
             </main>
         </div>
-        {openImage && (
-                <div className="modal" onClick={handleCloseModal}>
-                    <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
-                </div>
-            )}
         <Footer/>
+        {openImage && (
+            <div className="modal" onClick={handleCloseModal}>
+                <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
+            </div>
+        )}
         </ThemeProvider>
     );
 };
