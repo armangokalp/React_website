@@ -38,7 +38,7 @@ function MainFeaturedPost(props, id) {
           <Box
             sx={{
               position: 'relative',
-              p: { xs: 3, md: 6 },
+              p: { xs: 3, md: 6, },
               pr: { md: 0 },
             }}
           >
@@ -51,7 +51,7 @@ function MainFeaturedPost(props, id) {
               </Typography>
             </Grid>
             <div className='box'>
-            <Link variant="subtitle1" href={"/dillemas"}>
+            <Link variant="subtitle1" href={"/dillemas"} sx={{ color: 'blue', fontSize: '18px', fontWeight: 'bold' }}>
                 {post.linkText}
             </Link>
             </div>

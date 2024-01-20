@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+import Grid from '@mui/material/Grid';
 import "./Economic.css";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header/Header';
@@ -7,7 +8,8 @@ import Footer from '../Footer/Footer';
 import customTheme from '../customTheme';
 import { sections } from '../sections';
 import energyImage from '../Images/economic1.jpeg';
-import lightImage from '../Images/light.png';
+import imageA from '../Images/urban.jpeg';
+import imageB from '../Images/rural.jpeg';
 import { Line } from 'react-chartjs-2';
 import 'chart.js';
 import { useInView } from 'react-intersection-observer';
@@ -33,6 +35,25 @@ const economicData = {
 const Economic = () => {
 
     useScrollToTop();
+
+    const [openImage, setOpenImage] = useState(null);
+    const [imageScale, setImageScale] = useState(1);
+
+    const handleImageClick = (image) => {
+        setOpenImage(image);
+        if (image == imageA) {
+            setImageScale(1.3);
+        }
+        else {
+            setImageScale(1.9);
+        }
+    };
+
+    const handleCloseModal = () => {
+        setOpenImage(null);
+        setImageScale(1);
+    };
+
 
     const { ref, inView } = useInView({
         threshold: 0.5,
@@ -93,6 +114,14 @@ const Economic = () => {
                         <h3>Kentsel ve Kırsal Alanlar</h3>
                         <p className="conflict-explain-p-larger">
                         Kentsel alanlar, dünya nüfusunun çoğunluğuna ev sahipliği yaparken, inşa edilen yapılar, altyapılar ve ekonomik faaliyetlerin çoğunluğu da bu bölgelerdedir. İklim değişikliği etkileri ile meydana gelen aşırı hava olayları ve bağlı afetler nüfus yoğunluğunun fazla olduğu kentlerde büyük yıkımlara yol açar. Nüfus fazlalığı nedeniyle tehlike ve stres kaynaklarının mekânsal olarak yoğunlaştığı kentsel alanların şartları, kırsal alanlardan gelen göçlerle daha da zorlaşmaktadır. Kırsalda yaşayan topluluklar geçim kaynakları bakımından tarıma dolayısıyla doğal kaynaklara oldukça bağımlıdır. Bu nedenle iklim değişikliği kaynaklı zorluklar bu şartlardaki toplulukları daha savunmasız kılarken, doğal çevrede meydana gelen olumsuz etkiler kırsaldan kente göçlere sebep olmaktadır. Temel neden aşırı sıcaklık ve seller gibi felaketlerin tarım ve tarım dışı gelirleri düşürmesi ve gıda ve su gibi fiziksel ihtiyaç yoksunluğunun giderilme çabasıdır. Devlet düzeyinde afet yönetimi ve planlaması, altyapı dayanıklılığının arttırılması, yerinden edilmiş nüfusların yönetimine yönelik stratejilerin geliştirilmesi ve gittikçe nüfusu yoğunlaşan kentlerin kapsamlı gelişim planlamalarının yapılması gibi müdahaleler gereklidir.                        </p>
+                        <Grid container spacing={2} className="grid-container">
+                            <Grid item xs={6}>
+                                <img className="economic-image" src={imageA} onClick={() => handleImageClick(imageA)}/>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <img className="economic-image" src={imageB} onClick={() => handleImageClick(imageB)}/>
+                            </Grid>
+                        </Grid>
                         <h3>Geçim ve Yoksulluk</h3>
                         <p className="conflict-explain-p-larger">
                         İklim değişikliği nedeniyle meydana gelen afet ve tehlikeler, yoksulluk düzeyinde yaşayan bireyler ve topluluklar açısından halihazırda var olan geçim sıkıntısını daha da ağırlaştırmaktadır. Yoksul topluluklar bu tehlikelerden, geçim kaynakları, mahsul verimliliklerinde düşüşler, evlerinin tahrip edilmesi, artan gıda fiyatları, gıda ve su güvensizliği gibi unsurlar aracılığıyla etkilemektedir. Ayrıca aşırı yağışlar ve kasırgalar gibi ani etkilerle baş edebilme açısından yoksullar, zenginlere göre daha savunmasızdır. Devlet düzeyinde sosyo-ekonomik etkilerinin yönetilmesi, tüm bireylere yönelik adil acil müdahale yöntemlerinin geliştirilmesi, savunmasız ve dezavantajlı gruplara yönelik sosyal yardımlar ve iyileştirmeler gibi müdahaleler gereklidir.                        </p>
@@ -129,7 +158,7 @@ const Economic = () => {
                             <p className="conflict-explain-p-larger">
                             Enerji ve iklim değişikliği arasındaki ilişki bununla sınırlı kalmamaktadır. Enerji talebini sağlayan fosil yakıtların neden olduğu sera gazı emisyonları iklim değişikliğine neden olarak çevreyi etkilemekte, bu da enerji sistemlerini etkilemektedir. İklim değişikliği, enerji sektörüne zorluklar ve kırılganlıklar getirerek enerji güvenliğine tehdit oluşturmaktadır. Örneğin, kasırga, sel ve fırtına gibi aşırı hava olayları, enerji altyapısına zarar vermekte, enerji tedarik zincirlerini bozmakta ve elektrik kesintilerine yol açmaktadır. Bu tip hava olaylarına karşı savunmasız olan enerji sistemleri, iklim değişikliğinden etkilenmekte ve bir enerji güvensizliğine neden olmaktadır. Öte yandan, aşırı sıcaklığın neden olduğu kuraklık su kıtlığına yol açmaktadır. Enerji santrallerinde soğutma veya petrol ve gaz endüstrisinde çıkarma gibi birçok enerji üretim sürecinde su tüketimi yoğundur. Dolayısıyla, su kıtlığı enerji üretim kapasitesini azaltabilmekte ve enerji güvensizliğini artırabilmektedir.                            </p>
                         </div>
-                        <img src={energyImage} alt="Global Economy Chart" />
+                        <img src={energyImage} className="image-last" onClick={() => handleImageClick(energyImage)} />
                     </div>
                 </div>
 
@@ -144,6 +173,11 @@ const Economic = () => {
             </main>
         </div>
         <Footer/>
+        {openImage && (
+            <div className="modal" onClick={handleCloseModal}>
+                <img className="modal-content" src={openImage} style={{ transform: `scale(${imageScale})` }}  />
+            </div>
+        )}
         </ThemeProvider>
     )
 }

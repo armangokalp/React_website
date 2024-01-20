@@ -20,7 +20,7 @@ const mainFeaturedPost = {
     'İklim değişikliği, antroposentrik, ekosentrik ve devlet-merkezli perspektifleri kapsayan üç ayrı referans nesnesine tehdit olarak ortaya çıkar.',
   image: image0,
   imageText: 'main image description',
-  linkText: 'Okumaya devam et',
+  linkText: 'Okumaya devam et...',
 };
 
 
