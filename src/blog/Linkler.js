@@ -113,5 +113,141 @@ export const sabitLinkler = [
     },
   ];
 
+export const dinamikLinkler =
+[
+  
 
+    {
+      "author": "Başar Baysal, Çağla Vural, Sezen Kaya Sönmez",
+      "year": 2023,
+      "title": "Navigating The Dilemmas of Climate Security: Is Just Securitization of Climate Change Possible?",
+      "link": "https://ipc.sabanciuniv.edu/Content/Images/CKeditorImages/20231220-11125077.pdf"
+    },
+    {
+      "author": "Neslihan Arslan",
+      "year": 2023,
+      "title": "Küresel İklim Değişikliği: İklim Mültecilerinin Güvenlik Sorunları",
+      "link": "https://iupress.istanbul.edu.tr/tr/journal/jspc/article/kuresel-iklim-degisikligi-iklim-multecilerinin-guvenlik-sorunlari"
+    },
+    {
+      "author": "T.C. İçişleri Bakanlığı İç Güvenlik Stratejileri Dairesi Başkanlığı",
+      "year": 2023,
+      "title": "İklim Değişikliği Ekseninde Güvenlik",
+      "link": "http://www.icguvenlikyayinlari.gov.tr/iklim-degisikligi-ekseninde-guvenlik"
+    },
+    {
+      "author": "Hasan İlkbahar",
+      "year": 2023,
+      "title": "Su Güvenliği Bağlamında Nil Havzası Girişimi’nin (NHG) İklim Değişikliğine Yönelik Uyum ve Azaltım Stratejileri",
+      "link": "https://dergipark.org.tr/en/pub/ap/issue/80505/1378657"
+    },
+    {
+      "author": "Bengü Çelenk",
+      "year": 2023,
+      "title": "İklim Değişikliği, Tehdit Çarpanı Etkisi ve Güvenlik: İklim Güvenliğinden Uluslararası Güvenliğe",
+      "link": "https://dergipark.org.tr/tr/pub/guvenlikstrtj/issue/82196/1321596"
+    },
+    {
+      "author": "Nahom Kubrom",
+      "year": 2023,
+      "title": "Climate security: How is the United Nations responding to climate change as a source of insecurity and a hindrance to sustainable development in Sudan?",
+      "link": "https://www.diva-portal.org/smash/get/diva2:1767022/FULLTEXT01.pdf"
+    },
+    {
+      "author": "Akash Bag",
+      "year": 2023,
+      "title": "Is It a Policy Formulation or “Threat Multiplier”?: Addressing the United Nations Security Council Framing of Global Climate Change",
+      "link": "https://www.igi-global.com/chapter/is-it-a-policy-formulation-or-threat-multiplier/329079"
+    },
+    {
+      "author": "Isabelle Bond, James Mortensen",
+      "year": 2023,
+      "title": "The changing value of Antarctica to Australia’s security policy",
+      "link": "https://www.tandfonline.com/doi/full/10.1080/10357718.2023.2216139"
+    },
+    {
+      "author": "Veysel Babahanoğlu",
+      "year": 2023,
+      "title": "Uluslararası İlişkilerde Yeşil Yolculuk: Bir Güvenlik Sorunu Olarak Küresel İklim Değişikliği ve İklim Mülteciliği",
+      "link": "https://dergipark.org.tr/en/pub/dpusbe/issue/79156/1290496"
+    },
+    {
+      "author": "Kheira Tarif, Katongo Seyuba, Anne Funnemark, Dr Elisabeth L. Rosvold, Asha Ali , Dr Kyungmee Kim, Cedric de Coning, Dr Florian Krampe",
+      "year": 2023,
+      "title": "Climate, Peace and Security Research Paper: Insights on Climate, Peace and Security",
+      "link": "https://reliefweb.int/report/world/climate-peace-and-security-research-paper-insights-climate-peace-and-security-december-2023"
+    },
+    {
+      "author": "Alex Arnall",
+      "year": 2023,
+      "title": "Climate change and security research: Conflict, securitisation and human agency",
+      "link": "https://www.researchgate.net/publication/368965637_Climate_change_and_security_research_Conflict_securitisation_and_human_agency"
+    },
+    {
+      "author": "Trung Thanh Nguyen, Ulrike Grote, Frank Neubacher, Dil B. Rahut, Manh Hung Do, Gokul P. Paudel",
+      "year": 2023,
+      "title": "Security risks from climate change and environmental degradation: implications for sustainable land use transformation in the Global South",
+      "link": "https://www.sciencedirect.com/science/article/pii/S1877343523000696"
+    },
+    {
+      "author": "United Nations University Centre for Policy Research",
+      "year": 2023,
+      "title": "Climate-Security and Peacebuilding Thematic Review",
+      "link": "https://www.un.org/peacebuilding/sites/www.un.org.peacebuilding/files/documents/climate_security_tr_web_final_april10.pdf"
+    },
+    {
+      "author": "Jona Huber, Ignacio Madurga-Lopez, Una Murray, Peter C. McKeown, Grazia Pacillo, Peter Laderach, Charles Spillane",
+      "year": 2023,
+      "title": "Climate-related migration and the climate-security-migration nexus in the Central American Dry Corridor",
+      "link": "https://link.springer.com/article/10.1007/s10584-023-03549-6"
+    },
+    {
+      "author": "UNDP Pasific Islands Forum",
+      "year": 2023,
+      "title": "Pasific Climate Security Assessment Guide",
+      "link": "https://www.forumsec.org/wp-content/uploads/2023/07/Pacific-Climate-Security-Assessment-Guide.pdf"
+    },
+    {
+      "author": "UN Women",
+      "year": 2023,
+      "title": "Gendered Impacts of Climate Change: Empirical Evidence from Asia",
+      "link": "https://data.unwomen.org/sites/default/files/documents/Publications/2023/impact-climate-change-gender-asiapacific.pdf"
+    },
+    {
+      "author": "Dhanasree Jayaram, Aanehi Mundra",
+      "year": 2023,
+      "title": "Climate Security in the Indo-Pacific: Priorities and Challenges",
+      "link": "https://isdp.eu/content/uploads/2023/05/Brief-May-24-2023-Climate-FINAL.pdf"
+    },
+    {
+      "author": "Kheira Tarif, Katongo Seyuba, Anne Funnemark, Elisabeth L. Rosvold, Asha Ali, Kyungmee Kim, Cedric de Coning and Florian Krampe",
+      "year": 2023,
+      "title": "Climate, Peace and Security Research Paper: Insights on Climate, Peace and Security",
+      "link": "https://www.sipri.org/sites/default/files/2023-12/2023_sipri-nupi_insights.pdf"
+    },
+    {
+      "author": "Şuhnaz Yılmaz",
+      "year": 2023,
+      "title": "Facing new security threats in an era of global transformations: Turkey's challenges of energy security, climate change and sustainability",
+      "link": "https://www.tandfonline.com/doi/full/10.1080/14683849.2023.2179918"
+    },
+    {
+      "author": "Maria Julia Trombetta",
+      "year": 2023,
+      "title": "Handbook on Climate Change and International Security",
+      "link": "https://www.e-elgar.com/shop/gbp/handbook-on-climate-change-and-international-security-9781789906431.html"
+    },
+    {
+      "author": "Senem Atvur, Çağla Vural",
+      "year": 2022,
+      "title": "Türkiye’s Climate Policies in the Context of Sustainable Security",
+      "link": "https://dergipark.org.tr/tr/pub/bilig/issue/73202/1195533"
+    },
+    {
+      "author": "Sezen Kaya, Aslı Ilgıt",
+      "year": 2021,
+      "title": "İklim Değişikliği ve Çevresel Güvenlik: Türkiye Örneği",
+      "link": "https://alternatifpolitika.com/makale/iklim-degisikligi-ve-cevresel-guvenlik-turkiye-ornegi"
+    }
+];
 
