@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
+import "./Gallery.css"
 
-const Gallery = ({ galleryData, seconds }) => {
+const Gallery = ({ galleryData, seconds, noImage }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
@@ -25,7 +26,9 @@ const Gallery = ({ galleryData, seconds }) => {
 
   return (
     <div className="gallery-container">
-      {galleryData.map((data, index) => (
+    {noImage && <h1 className='gallery-main-title'>Makaleler</h1>}
+    {!noImage &&
+      galleryData.map((data, index) => (
         <div
           key={index}
           className={`gallery-item ${index === activeIndex ? 'active' : ''}`}
@@ -43,7 +46,27 @@ const Gallery = ({ galleryData, seconds }) => {
 
         </div>
         
-      ))}
+      ))
+    }
+    {noImage &&
+      galleryData.map((data, index) => (
+        <div
+          key={index}
+          className={`gallery-item not-flex ${index === activeIndex ? 'active' : ''}`}
+        >
+          <br/>
+          <p className='gallery-author'><b>Yazar(lar): </b>{data.author}</p>
+          <p className='gallery-author'><b>Yıl: </b>{data.year}</p>
+          <p className='gallery-author'><b>Makale: </b>{data.title}</p>
+          <div className='gallery-link'>
+            <a href={data.link}>{"Makaleye gitmek için tıklayın"}</a>
+          </div>
+        </div>
+
+        
+      ))
+    }
+     
       <button className="nav-button left" onClick={handlePrev}>
             <i className="fas fa-chevron-left"></i>
       </button>

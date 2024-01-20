@@ -22,8 +22,11 @@
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     display: flex;
-
     transform: scale(0.95);
+  }
+  .gallery-item.not-flex
+  {
+    display: block;
   }
 
   .gallery-item:not(.active) {
@@ -38,12 +41,29 @@
   }
   .gallery-text {
     position: absolute;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     left: 10%;
     width: 40%;
     top: 3%;
   }
+  .gallery-author
+  {
+    position: relative;
+    margin: 30px 10%;
+    font-size: 1.1rem;
+    width: 80%;
+  }
 
+  .gallery-main-title
+  {
+    position: absolute;
+    color: #228b22d4;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
   .gallery-link {
     position: absolute;
     font-size: 1rem;
@@ -110,15 +130,22 @@
 .bubble
 {
   display: flex;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.532);
   width: 10px;
   height: 10px;
   margin: 2px;
   border-radius: 100%;
   cursor: pointer;
 }
+.bubble:hover
+{
+  background-color: gray;
+  transform: scale(1.3);
+  margin: 2px 3px;
+}
 .bubble.active
 {
+  background-color: gray;
   transform: scale(1.5);
   margin: 2px 5px;
 }

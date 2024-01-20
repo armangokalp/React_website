@@ -5,12 +5,11 @@ import MainFeaturedPost from './MainFeaturedPost';
 import customTheme from '../customTheme'
 import Footer from '../Footer/Footer';
 import image0 from '../Images/image0.jpg';
-import "./Gallery.css"
-import Gallery from './Gallery';
+import Gallery from './Galleries/Gallery';
 import './Blog.css'
 import { useNavigate } from 'react-router-dom';
 import "../Article/ArticlePage.css"
-import { sabitLinkler } from './Linkler';
+import { sabitLinkler,dinamikLinkler } from './Linkler';
 
 
 
@@ -25,39 +24,7 @@ const mainFeaturedPost = {
 };
 
 
-const dinamikLinkler = [
-  {
-    title: 'UNDP',
-    explanation:
-      "İklim güvenliği ve riskleri hakkında araştırma yapan UNDP'ye göz atın.",
-    imageSrc: "https://partnership.who.int/images/librariesprovider14/default-album/undp_logo.tmb-1200v.png?Culture=en&sfvrsn=906a1236_2",
-    link: "https://www.undp.org/",
-  },
-  {
-    title: 'Water Wars: Global Crisis Unveiled',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
 
-  },
-  {
-    title: 'Water Wars:',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
-
-  },
-  {
-    title: 'Crisis Unveiled',
-    explanation:
-      'The worlds escalating water crisis and the conflicts it fuels in this concise examination of a pressing global issue',
-    imageSrc: "https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg",
-    link: "https://www.undp.org/",
-
-  },
-];
 
 
 export default function Blog() {
@@ -81,7 +48,7 @@ export default function Blog() {
           <MainFeaturedPost post={mainFeaturedPost} />
           <div className='galleries-div'>
               <Gallery galleryData={sabitLinkler} seconds = {0}/>
-              <Gallery galleryData={dinamikLinkler} seconds = {4}/>
+              <Gallery galleryData={dinamikLinkler} seconds = {4} noImage={true}/>
           </div>
         <br/>
         <br/>
@@ -89,54 +56,54 @@ export default function Blog() {
           <table class="climate-table">
             <thead>
                 <tr>
-                    <th>Climate Change Threats</th>
-                    <th>Human Beings</th>
-                    <th>State</th>
-                    <th>Planet/Ecosystem</th>
+                    <th>İklim Değişikliği Tehditleri</th>
+                    <th>Birey/İnsan</th>
+                    <th>Devlet</th>
+                    <th>Gezegen/Ekosistem</th>
                 </tr>
             </thead>
             <tbody>
-                <tr onClick={() => handleRowClick('/Conflict')}>
-                    <td><a to="/Conflict" className="no-underline">Armed Conflict</a></td>
-                    <td>Internal/international displacement, death of civilians, sufferings from armed conflict</td>
-                    <td>Geopolitical tensions over resources, armed conflict</td>
-                    <td>Further Ecosystem disruptions due to armed conflict</td>
-                </tr>
-                <tr onClick={() => handleRowClick('/Migration')}>
-                    <td><a to="/Migration" className="no-underline">Climate Induced Migration</a></td>
-                    <td>Sufferings of people who migrate, cultural disruptions</td>
-                    <td>Managing displaced populations, cultural impacts/societal security, border security</td>
-                    <td>Ecosystem shifts and disruptions based on population moves</td>
+                <tr onClick={() => handleRowClick('/Extreme')}>
+                    <td><a to="/Extreme" className="no-underline">Aşırı Hava Olayları</a></td>
+                    <td>Can ve mal kayıpları</td>
+                    <td>Afet Yönetimi, Altyapı Hasarı</td>
+                    <td>Ekosistemde Gerçekleşen Dönüşümler, Habitat Kaybı</td>
                 </tr>
                 <tr onClick={() => handleRowClick('/Food')}>
-                    <td>Food Security</td>
-                    <td>Hunger, malnutrition</td>
-                    <td>Ensuring food supplies, addressing shortages, economic security</td>
-                    <td>Changes in crop patterns, impact on biodiversity</td>
+                    <td><a to="/Food" className="no-underline">Gıda Güvenliği</a></td>
+                    <td>Açlık, Yetersiz Beslenme, Gıda Tedarik Zincirlerinin Bozulması, Fiyatlarda İstikrarsızlık</td>
+                    <td>Gıda Tedariğinin Sağlanması, Kıtlığa İlişkin Önlemler, Ekonomik Güvenlik</td>
+                    <td>Mahsul Zamanları ve Verimliliklerinde Değişiklikler, Biyoçeşitliliğin Azalması</td>
                 </tr>
                 <tr onClick={() => handleRowClick('/Water')}>
-                    <td>Water Security</td>
-                    <td>Water scarcity, lack of access to clean water, challenges related to sanitation and sanitary issues</td>
-                    <td>Geopolitical tensions over freshwater resources - water wars</td>
-                    <td>Impact on aquatic ecosystems</td>
-                </tr>
-                <tr onClick={() => handleRowClick('/Extreme')}>
-                    <td>Extreme Climate Events</td>
-                    <td>Loss of lives, loss of goods</td>
-                    <td>Disaster management, infrastructure damage</td>
-                    <td>Ecosystem transformations, habitat loss</td>
+                    <td>Su Güvenliği</td>
+                    <td>Su Kıtlığı, Temiz Suya Erişimde Zorluklar, İnsan sağlığına Yönelik Olumsuz Etkiler</td>
+                    <td>Tatlı Su Kaynakları Üzerindeki Jeopolitik Gerilimler</td>
+                    <td>Değişen Su Mevcudiyeti, Su Ekosistemleri Üzerinde Etkiler</td>
                 </tr>
                 <tr onClick={() => handleRowClick('/Economic')}>
-                    <td>Threats to Economy</td>
-                    <td>Increased poverty, economic instability</td>
-                    <td>Economic planning, managing supply chain disruptions</td>
+                    <td>Ekonomik Güvenlik</td>
+                    <td>Artan Yoksulluk, Ekonomik İstikrarsızlık</td>
+                    <td>Ekonomik Planlama İhtiyacı, Tedarik Zinciri Aksaklıklarını Yönetme, Enerji Politikalarının Uyarlanması</td>
+                    <td>Ekonomik Sektörleri Etkileyen Ekosistemlerde Bozulmalar</td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Economic')}>
+                    <td>Enerji Güvenliği</td>
+                    <td>Güvenli Enerji Arzında Eşitsizlikler ve Sorunlar</td>
+                    <td>Enerjiye İlişkin Zorluklar, Enerji Verimliliğinin Sağlanması, Çevre Dostu Teknolojiye Dönüşüm Gerekliliği</td>
                     <td></td>
                 </tr>
-                <tr onClick={() => handleRowClick('/Water')}>
-                    <td>Desertification</td>
-                    <td>Displacement, loss of arable land, livelihoods</td>
-                    <td>Implementing land management, combating desertification</td>
-                    <td>Ecosystem changes, loss of productive land</td>
+                <tr onClick={() => handleRowClick('/Migration')}>
+                    <td>İklim Göçü</td>
+                    <td>Kitlesel Göç, Kültürel Bozulmalar</td>
+                    <td>Yerinden Edilmiş Nüfusun Yönetilmesi, Kültürel Etkiler, Toplumsal</td>
+                    <td>Değişen Göç Modelleri, Nüfus Hareketlerine Bağlı Olarak Ekosistemde </td>
+                </tr>
+                <tr onClick={() => handleRowClick('/Conflict')}>
+                    <td>Silahlı Çatışma</td>
+                    <td>Uluslararası/Ülke içi Yerinden Edilme, Sivil Ölümü, Silahlı Çatışmalardan Kaynaklanan Acılar</td>
+                    <td>Kaynaklar Üzerinde Jeopolitik Gerilimler, Silahlı Çatışmalar</td>
+                    <td>Silahlı Çatışmalar Nedeniyle Ekosistemde Bozulmaların Artması</td>
                 </tr>
             </tbody>
           </table>
