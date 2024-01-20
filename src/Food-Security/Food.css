@@ -42,13 +42,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 100px 0;
     width: 80%;
-    min-height: 370px;
+    min-height: 400px;
     left: 10%;
     border-radius: 50px;
     transition: transform 0.3s ease-in-out;
     background-color: white;
     display: flex;
     flex-direction: column;
+  }
+  .food-general-div.full
+  {
+    max-height: 600px;
   }
   
 .food-general-div.enlarged {
@@ -96,12 +100,12 @@ margin: 0%;
     left: 7%;
 }
 .food-full-img {
-    background-image: url("https://nationalfoodinstitute.com.au/nfi/wp-content/uploads/2022/10/Screen-Shot-2022-10-17-at-4.19.15-pm.png");
-    background-position: center center; 
+    /* background-image: url("https://www.nycfoodpolicy.org/wp-content/uploads/2019/08/Screen-Shot-2019-08-27-at-10.58.17-AM.png");
+    background-position: center center;  */
     width: 100%;
     height: 100%;
     margin: 0%;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
 }
 
   
